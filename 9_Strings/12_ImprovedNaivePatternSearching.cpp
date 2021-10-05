@@ -6,6 +6,8 @@ void func(string &text, string &patt)
 {
     //This solution is just an improvement over the naive solution when all the elements of the pattern are distinct.
 
+    // THIS SOLUTION IS ONLY FOR DISCRETE PATTERNS
+
     for (int i = 0; i <= (text.length() - patt.length()); )
     {
         int j=0;

@@ -10,9 +10,9 @@ void func(string &text, string &patt)
 {
     //We do modulo as weighted sum might become very large . q is generally a prime no. and is a big as possible so that we have less spurious hits.
 
-    //M=length of patter and N=length of text
+    //M=length of patter, and N=length of text
+    
     //Computing (d^(M-1))%q
-
     int h=1;
     for(int i=1;i<=patt.length()-1;i++)
     {
@@ -60,7 +60,8 @@ void func(string &text, string &patt)
     //Worst case in case of AAAAA and AAA
     //Works good in average time
     
-    // RABIN KARP USED TO FIND MULTIPLE PATTERNS IN A TEXT
+    // RABIN KARP USED TO FIND MULTIPLE PATTERNS IN A TEXT SO IN THAT CASE WE USE AN ARRAY OF PATTERN HASHES AND COMPARE THEM
+
 }
 int main()
 {
