@@ -2,7 +2,7 @@ There are two types of ways to use string in cpp:
 
 1) C-style strings
     int main(){
-        char str[]="gfg";  we add "" so that it ends with '\0'
+        char str[]="gfg";  when we add "" the compiler auto-matically add '\0' to the end of the string
         cout<<str;
         return 0;
     }
@@ -11,8 +11,7 @@ There are two types of ways to use string in cpp:
 
     char str[]="gfg" and sizeof(str) will give 4 due to '\0'
 
-    char str[]={'g','f','g'} and if we print this strng the output character is not defined.
-    and its length is only 3.
+    char str[]={'g','f','g'} and if we print this strng the output character is not defined and its length is only 3.
 
     char str[]={'g','f','g','\0'} we must add '\0' if we use it as a string.
 
@@ -30,7 +29,7 @@ There are two types of ways to use string in cpp:
 
     Can assign a string latter
 
-    Do nothave to worry about size its dynamically allocated
+    Do not have to worry about its size because it is dynamically allocated
 
     Can be converted to C style if needed
 
