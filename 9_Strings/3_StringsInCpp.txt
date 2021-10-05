@@ -11,7 +11,7 @@ There are two types of ways to use string in cpp:
 
     char str[]="gfg" and sizeof(str) will give 4 due to '\0'
 
-    char str[]={'g','f','g'} and if we print this strng the output character is not defined and its length is only 3.
+    char str[]={'g','f','g'} and if we print this string the output is not defined and its length is only 3.
 
     char str[]={'g','f','g','\0'} we must add '\0' if we use it as a string.
 
@@ -27,7 +27,7 @@ There are two types of ways to use string in cpp:
 
     Supports operators like +,<,>,==,>=,<=
 
-    Can assign a string latter
+    Can assign a string later
 
     Do not have to worry about its size because it is dynamically allocated
 
