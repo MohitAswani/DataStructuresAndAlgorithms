@@ -58,7 +58,7 @@ void func(string &text, string &patt)
     //Time complextiy : O((N-M+1)*M)
     // N- length of text , M- length of patt
     //Worst case in case of AAAAA and AAA
-    //Works good in average time
+    //Works better than nive at average
     
     // RABIN KARP USED TO FIND MULTIPLE PATTERNS IN A TEXT SO IN THAT CASE WE USE AN ARRAY OF PATTERN HASHES AND COMPARE THEM
 
