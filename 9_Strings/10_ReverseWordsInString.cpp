@@ -6,7 +6,7 @@ string func(string str)
 {
     string temp="";
     string output="";
-    for(int i=0;i<str.length();i++)
+    for(size_t i=0;i<str.length();i++)
     {
         if(str[i]==' ')
         {

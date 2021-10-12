@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 #define ll long long
 #define d 256 //this defines the total numbers we can consider
-#define rep(i, t) for (ll i = 0; i < t; i++)
 using namespace std;
 
 const int q=101;

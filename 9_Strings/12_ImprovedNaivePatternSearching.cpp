@@ -34,6 +34,7 @@ void func(string &text, string &patt)
     cout << endl;
 
     //THIS SOLUTION IS ONLY TRUE WHEN ALL ELEMENTS ARE DISTINCT
+    
     // Time complexity : O(length(text))
     // Auxillary space : O(1)
 }
