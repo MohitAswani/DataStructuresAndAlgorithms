@@ -9,3 +9,6 @@ Strings:
 4) C/C++ : Char is 8 bits and stored using ASCII. Also suppports wchar_t which is used to store wide chars / unicode chars.
 
 5) Java : Char is 16 bits and storing in UTF-16 ( First 128 encodings are same as ASCII ). Also supports byte.
+
+
+Hi
