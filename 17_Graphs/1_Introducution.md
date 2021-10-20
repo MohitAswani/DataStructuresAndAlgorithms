@@ -55,7 +55,7 @@
 
 <h2>Terms in graphs</h2>
 
-* <b>Walk</b> : A sequence of vertices we get by following vertex of a graph. 
+* <b>Walk</b> : A sequence of vertices we get by following edges of a graph. 
 
 <img src="2021-10-18-13-44-34.png" width=300px>
 
