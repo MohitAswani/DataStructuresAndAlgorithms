@@ -15,21 +15,6 @@ void printGraph(vector <int> adj[],int V)
         cout<<endl;
     }
 }
-/**
- * This code is similiar to the previous one the only difference being that this is also valid for disconnected graph.
- * For eg : 
-                  1                       4
-                /   \                    / \
-               0     3                  5---6
-                \   /
-                  2
-            BFS with source = 0 : 0 1 2 3 
- * The basics of traversal of the graph remain same the difference is that we traverse the adj list in a seperate function 
- and mentain a visited array in that. If a vertex is not visited we call the BFS for it and pass the visited array to the BFS.
- * And BFS prints all the nodes connected to the source we passed.
- * After that we traverse the list and again and repeat the above process.
- * This prints all the vertices of a graph connected or not.
-*/
 void BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
 {
     queue <int> q;
@@ -39,7 +24,6 @@ void BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
     {
         int u=q.front();
         q.pop();
-        cout<<u<<" ";
         for(auto v:adj[u])
         {
             if(visited[v]==false)
@@ -50,19 +34,19 @@ void BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
         }
     }
 }
-// **************** THIS IS THE CASE WHEN THE GRAPH IS NOT CONNECTED AND SOURCE IS NOT***********
 void BFS_dis(vector <int> adj[],int v)
 {
+    int count=0;
     vector <bool> visited(v+1,false);
     for(int i=0;i<v;i++)
     {
-        if(visited[i]==false)
+        if(visited[i]==false)   //this part count the connect component of a graph
         {
             BFS_Helper(adj,i,visited);
+            count++;
         }
     }
-
-    // O(V+E) : since the inner loop with quene runs sum of edges (2*E in undirected , E in directed ) times and since we go through all the vertieces its O(V+E).
+    cout<<count<<endl;
 }
 int main(){
     int V=7;
