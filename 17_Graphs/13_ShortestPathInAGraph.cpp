@@ -15,6 +15,11 @@ void printGraph(vector <int> adj[],int V)
         cout<<endl;
     }
 }
+/**
+ *  Shortest path in a graph is found using BFS and finding the path we take the distance of each vertice from the source and store it in a array.
+ * 
+ * And for each newly visited adjacent vertice we add one to distance of parent from source and that is the distance of the child from the source.
+ */
 void BFS(vector <int> adj[],int v,int s)
 {
     vector <bool> visited(v+1,false);
