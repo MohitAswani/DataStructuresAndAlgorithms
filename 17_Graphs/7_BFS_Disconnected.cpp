@@ -50,7 +50,7 @@ void BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
         }
     }
 }
-// **************** THIS IS THE CASE WHEN THE GRAPH IS NOT CONNECTED AND SOURCE IS NOT***********
+// **************** THIS IS THE CASE WHEN THE GRAPH IS NOT CONNECTED AND SOURCE IS NOT GIVEN***********
 void BFS_dis(vector <int> adj[],int v)
 {
     vector <bool> visited(v+1,false);
@@ -62,7 +62,10 @@ void BFS_dis(vector <int> adj[],int v)
         }
     }
 
-    // O(V+E) : since the inner loop with quene runs sum of edges (2*E in undirected , E in directed ) times and since we go through all the vertieces its O(V+E).
+    /* Time complexity : O(V+E)  (Reason being in the DFS_helper we traverse through all the adjacency list and that will be 2*E in undirected and E in
+     directed. The V is present for the case when all the vertices are disconnected)
+    */
+   
 }
 int main(){
     int V=7;

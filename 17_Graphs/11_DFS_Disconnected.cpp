@@ -15,6 +15,19 @@ void printGraph(vector<int> adj[], int V)
         cout << endl;
     }
 }
+/**
+ * In DFS OF disconnect graph the basics are same only difference being that we traverse all the vertices in a loop. This lead to printing all 
+ the vertices connected a given vertex and then traversal to the next disconnect vertex in the loop.
+ * Eg:
+
+            0          3
+           / \         |
+          /   \        4
+          1---2
+            DFS : 0 1 2 3 4
+ * In the above graph we first traverse 0,1,2 and then 3,4
+ * We can also do DFS itteratively by using STACK data structure.
+ */
 void DFS_helper(vector<int> adj[], int s, vector <bool> &visited)
 {
     visited[s] = true;
@@ -31,8 +44,12 @@ void DFS(vector<int> adj[], int v)
     for(int i=0;i<v;i++)
     {
         if(visited[i]==false)
-        DFS_helper(adj,i,visited);
+        DFS_helper(adj,i,visited);  //all the times this call is made is the number of disconnect components in this graph
     }
+
+    /* Time complexity : O(V+E)  (Reason being in the DFS_helper we traverse through all the adjacency list and that will be 2*E in undirected and E in
+     directed. The V is present for the case when all the vertices are disconnected)
+    */
 }
 int main()
 {

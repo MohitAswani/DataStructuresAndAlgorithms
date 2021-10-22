@@ -2,7 +2,7 @@
 
 * We use adjacency list to implement graph because adjacency matrix is redundant and takes space for values which are adjacent to it and also those which aren't.
 
-* On the other hand adjacency list only stores the vertecis connected to another vertex: 
+* On the other hand adjacency list only stores the vertices connected to another vertex: 
 
 ![](2021-10-18-19-02-17.png)
 
