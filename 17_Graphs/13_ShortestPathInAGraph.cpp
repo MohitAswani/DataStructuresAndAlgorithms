@@ -41,6 +41,8 @@ void BFS(vector <int> adj[],int v,int s)
     for(int i=0;i<v;i++)
     cout<<distance[i]<<" ";
 
+    // Time complexity : O(V+E)
+
 }
 int main(){
     int V=4;

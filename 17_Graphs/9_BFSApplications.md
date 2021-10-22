@@ -10,7 +10,7 @@
 
 **In garbage collection**: searches the memory which is reachable by the system a memory is not its deleted
 
-**Cycle detection**: both DPS & BFS are used in cycle detection.
+**Cycle detection**: both DFS & BFS are used in cycle detection.
 
 **Ford fulkerson algorithm**: a maximum flow algorithm and BFS provides better time complexity in comparision to DFS.
 
