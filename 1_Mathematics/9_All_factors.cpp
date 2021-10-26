@@ -5,7 +5,7 @@ using namespace std;
 void factors(int n)
 {
     ll i;
-    for (i =  1; i * i < n; i++)
+    for (i =  2; i * i < n; i++)
     {
         if (n % i == 0)
         {
@@ -20,6 +20,6 @@ void factors(int n)
 }
 int main()
 {
-    factors(12);
+    factors(2);
     return 0;
 }
