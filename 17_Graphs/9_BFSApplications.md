@@ -1,6 +1,6 @@
 # Applications of BFS:
 
-**Shortest path in a unweighted graph**: since BFS finds all the edges connected a vertex hence it also finds the shortest path. Also the shortest path algorithms like Dijkstra's also use the BFS to find the shortest path and instead of using normal queue they use priority queue.
+**Shortest path in a unweighted graph**: since BFS finds all the edges connected a vertex hence it also finds the shortest path. Also the shortest path algorithms like Dijkstra's also use the BFS to find the shortest path and instead of using normal queue they use priority queue (for weighted graphs).
 
 **Crawlers in search engine**: go to pages and then their neighbours and their neighbours.
 

@@ -73,8 +73,8 @@
 
 (Directed acyclic graphs are called DAG and are very important)
 
-* <b>Weighted</b> : A graph is called weighted if there is weight associated with each vertex . Eg : Graph made up of roads connecting different cities where the weight is the length of thr roads. Another example is computer networks.
+* <b>Weighted</b> : A graph is called weighted if there is weight associated with each edge. Eg : Graph made up of roads connecting different cities where the weight is the length of thr roads. Another example is computer networks.
 
-* <b>Unweighted</b> : A graph is called unweighted if there is no weight associated with each vertex . 
+* <b>Unweighted</b> : A graph is called unweighted if there is no weight associated with each edge. 
 
 ![](2021-10-18-13-52-11.png)

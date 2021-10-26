@@ -24,6 +24,8 @@ void printGraph(vector <int> adj[],int V)
                 \   /
                   2
             BFS with source = 0 : 0 1 2 3 
+            BFS with source = 4 : 4 5 6
+            Combinned : 0 1 2 3 4 5 6
  * The basics of traversal of the graph remain same the difference is that we traverse the adj list in a seperate function 
  and mentain a visited array in that. If a vertex is not visited we call the BFS for it and pass the visited array to the BFS.
  * And BFS prints all the nodes connected to the source we passed.
@@ -51,7 +53,7 @@ void BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
     }
 }
 // **************** THIS IS THE CASE WHEN THE GRAPH IS NOT CONNECTED AND SOURCE IS NOT GIVEN***********
-void BFS_dis(vector <int> adj[],int v)
+void BFS(vector <int> adj[],int v)
 {
     vector <bool> visited(v+1,false);
     for(int i=0;i<v;i++)
@@ -77,6 +79,6 @@ int main(){
     addEdge(adj,4,5);
     addEdge(adj,5,6);
     addEdge(adj,4,6);
-    BFS_dis(adj,V);
+    BFS(adj,V);
     return 0;
 }

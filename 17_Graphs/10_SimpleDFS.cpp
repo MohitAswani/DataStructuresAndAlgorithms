@@ -16,8 +16,8 @@ void printGraph(vector<int> adj[], int V)
     }
 }
 /**
- * In DFS we use recursion to traverse a graph and we print the vertex connected (usually the smaller one) to a given vertex and then go to that vertex 
- and do the same thing. 
+ * In DFS we use recursion to traverse a graph and we print the vertex connected (usually the smaller one) to a given 
+vertex and then go to that vertex and do the same thing. 
  * For eg : 
              0----1\   
              |    | 4

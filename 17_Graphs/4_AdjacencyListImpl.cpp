@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void addEdge(vector <int> adj[],int u,int v)
+void addEdge(vector <int> adj[],int u,int v)   // For undirected graph
 {
     adj[u].push_back(v);
     adj[v].push_back(u);
