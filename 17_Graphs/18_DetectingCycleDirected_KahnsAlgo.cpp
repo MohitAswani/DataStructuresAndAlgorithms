@@ -15,22 +15,14 @@ void indegree(vector <int> adj[],int V,vector <int> &indegree)
     }
 }
 /**
- * KAHN'S BFS BASED ALGORITHM :
- * -------------------
+ * KAHN'S ALGORITHM FOR CYCLE DECTECTION :
  * 
- * Store the indegree of every vertex
- * Create a queue q
- * Add all 0 indegree vertices to the q
- * while(q is not empty)
- * {
- *      a) u=q.pop()
- *      b) print u
- *      c) For every adjacent v of u:
- *          i) Reduce indegree of v by 1
- *          ii) If indegree of v = 0 add v to the queue
- * }
+ * In case of a cyclic graph there will be point when the indegree of some vertices won't be zero and the queue would be 
+ empty.
+ * 
+ * This is because dependencies are circularly dependent on each other so there is no way to execute anyone of them.
  */ 
-void topologicalSort(vector <int> adj[],int V)
+bool cycleDetection(vector <int> adj[],int V)
 {
     vector <int> indegreeVector(V+1);
     indegree(adj,V,indegreeVector);
@@ -40,11 +32,12 @@ void topologicalSort(vector <int> adj[],int V)
         if(indegreeVector[i]==0)
         q.push(i);
     }
+    int count=0;
     while(q.empty()==false)
     {
         int u=q.front();
         q.pop();
-        cout<<u<<" ";
+        count++;
         for(auto v:adj[u])
         {
             if(indegreeVector[v]!=0)
@@ -56,15 +49,20 @@ void topologicalSort(vector <int> adj[],int V)
             }
         }
     }
+    
+    return (count!=V);
+    // Time complexity : O(V+E) since thats the complexity of Kahn's algorithm
 }
 int main(){
     int V=5;
     vector <int> adj[V];  //In this implementation we use array of vectors we can also use vector of vectors to allow flexiblity
     addEdge(adj,0,2);
-    addEdge(adj,0,3);
+    addEdge(adj,3,0);
     addEdge(adj,2,3);
     addEdge(adj,1,3);
     addEdge(adj,1,4);
-    topologicalSort(adj,V);
+    cout<<boolalpha;
+    cout<<cycleDetection(adj,V)<<endl;
+    cout<<noboolalpha;
     return 0;
 }
