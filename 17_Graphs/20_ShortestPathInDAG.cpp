@@ -4,6 +4,10 @@ void addEdge(vector<pair<int,int>> adj[], int u, int v,int cost)
 {
     adj[u].push_back({v,cost});
 }
+/**
+ * This is my solution to the problem . In this we use the normal BFS to find the minimum distance but instead of taking unweigted edges we take weighted
+ edges.
+ */ 
 void BFS(vector<pair<int,int>> adj[], int v, int s)
 {
     vector<bool> visited(v + 1, false);

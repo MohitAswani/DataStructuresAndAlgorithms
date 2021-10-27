@@ -17,8 +17,7 @@ void indegree(vector <int> adj[],int V,vector <int> &indegree)
 /**
  * KAHN'S ALGORITHM FOR CYCLE DECTECTION :
  * 
- * In case of a cyclic graph there will be point when the indegree of some vertices won't be zero and the queue would be 
- empty.
+ * In case of a cyclic graph there will be a point when the indegree of some vertices won't be zero and the queue would be empty.
  * 
  * This is because dependencies are circularly dependent on each other so there is no way to execute anyone of them.
  */ 
