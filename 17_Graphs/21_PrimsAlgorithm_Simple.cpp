@@ -17,6 +17,16 @@ using namespace std;
                       * And we keep doing till all the edges are in MST.
                       * For better understanding watch the video : "Prim's Algorithm/Minimum Spanning Tree"
  * PRIM'S ALGORITHM moves step by step and makes greedy choice at each point.
+ * 
+ * IMPLEMENTAION EXPLANATION : * First we take a boolean array which tells where the element at index i is included in the MST or not.
+                               * We take a key array and store the store the minimum edge in this array.
+                               * To implement the key part we first initialize the key as infinite. Then we initialize the key at 0 as 0.
+                               * Then we find the minimum edge (which connect mst to non mst's) which is not included in the mst.
+                               * Then we included the vertice connected to minimum edge to the mst.
+                               * Then we uppdate the key array with the weight of the edges connect to the min edge vertices and these edges are 
+                               connected to those vertices which are not in mst .
+                               * For better understanding of this concept watch the lecture : "Implementation of Prim's Algorithm C++".
+ * 
  */ 
 int primMST(ll graph[V][V])
 {
