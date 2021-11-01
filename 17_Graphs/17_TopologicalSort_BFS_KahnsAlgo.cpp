@@ -17,11 +17,11 @@ void indegree(vector <int> adj[],int V,vector <int> &indegree)
 /**
  * KAHN'S BFS BASED ALGORITHM :
  * -------------------
- * Topological sort : in this problem we consider the vertices as jobs and edges as dependencies and we sort the jobs according to the dependencies 
-                    and print the onces with least dependencies first. 
+ * Topological sort : in this problem we consider the vertices as jobs and edges as dependencies and we sort the jobs 
+                    according to the dependencies and print the onces with least dependencies first. 
 
-                    In topological sort we need to print the finishing order of the job. That is dependent jobes should come later and the jobs on
-                    which they are dependent come first.
+                    In topological sort we need to print the finishing order of the job. That is dependent jobes should 
+                    come later and the jobs on which they are dependent come first.
                     
  * Store the indegree of every vertex
  * Create a queue q

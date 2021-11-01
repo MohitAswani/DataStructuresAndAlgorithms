@@ -55,8 +55,8 @@ void topologicalSort(vector<pair<ll,ll>> adj[],ll V,vector <ll> &toposort)
                 if(dist[v]>dist[u]+weight(u,v))
                    dist[v]=dist[u]+weight(u,v)
  *
- * Reason : Since this is DIRECTED ACYCLIC graph hence there will never be a backward and forward edge on the same edge. So if we just move forward 
- using the topo sort and keep on finding the minimum distance for each edge we get the solution.
+ * Reason : Since this is DIRECTED ACYCLIC graph hence there will never be a backward and forward edge on the same edge. 
+ So if we just move forward using the topo sort and keep on finding the minimum distance for each edge we get the solution.
  * 
  * For better understanding watch the video "Shortest Path in DAG"
  * 

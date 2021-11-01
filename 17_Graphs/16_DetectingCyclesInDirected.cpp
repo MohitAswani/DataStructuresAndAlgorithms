@@ -7,11 +7,12 @@ void addEdge(vector<int> adj[], int u, int v)
 }
 /**
  * To detect cycle in directed graph we cannot use the undirected algorithm because it gives true for such cases : 0-->1<--2
- * In the above it will first traverse 0,1 in DFS_helper and then go to 2 in another DFS_helper and give true for 1,2 since 1 is adjacent and not parent 
-of 2.
- * So cycles are present in directed graphs if in the same recursive call of DFS_helper function we detect a vertices which we already visited in the  
- same call of DFS_helper. (Or if we detect a back edges )
- * So to do this we take a temporary array called recursion call stack in which we store the visited vertices of a one call of DFS_helper.
+ * In the above it will first traverse 0,1 in DFS_helper and then go to 2 in another DFS_helper and give true for 1,2 since 
+ 1 is adjacent and not parent of 2.
+ * So cycles are present in directed graphs if in the same recursive call of DFS_helper function we detect a vertices which 
+ we already visited in the same call of DFS_helper. (Or if we detect a back edges )
+ * So to do this we take a temporary array called recursion call stack in which we store the visited vertices of a one 
+ call of DFS_helper.
  * If a vertices is visited and is contained in recursive call stack then it is a cycle.
  */
 bool DFS_helper(vector<int> adj[], int s, vector <bool> &visited,vector <bool> &recCallStack)

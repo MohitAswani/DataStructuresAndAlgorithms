@@ -15,8 +15,9 @@ void printGraph(vector<int> adj[], int V)
     }
 }
 /**
- * To perform the topological sort with DFS we use a stack. We traverse the graph with normal adjacency list and push the vertices which denotes the 
- dependies with more dependents. So finally the stack contains dependencies in the order of their dependents.
+ * To perform the topological sort with DFS we use a stack. We traverse the graph with normal adjacency list and push the 
+ vertices which denotes the dependencies with more dependents. So finally the stack contains dependencies in the order of 
+ their dependents.
  *
  *For better understanding see the video.
  */
