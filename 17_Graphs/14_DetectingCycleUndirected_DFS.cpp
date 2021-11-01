@@ -39,8 +39,8 @@ bool DFS(vector<int> adj[], int v)
     }
     return false;
 
-    /* Time complexity : O(V+E) this solution is similiar to DFS but the only difference being that we pass a parent variable to prevent the code from 
-    considering its parent as already visited node and considering its a cycle
+    /* Time complexity : O(V+E) this solution is similiar to DFS but the only difference being that we pass a parent 
+    variable to prevent the code from considering its parent as already visited node and considering its a cycle
     */
 }
 int main()

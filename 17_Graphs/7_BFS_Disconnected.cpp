@@ -64,8 +64,8 @@ void BFS(vector <int> adj[],int v)
         }
     }
 
-    /* Time complexity : O(V+E)  (Reason being in the DFS_helper we traverse through all the adjacency list and that will be 2*E in undirected and E in
-     directed. The V is present for the case when all the vertices are disconnected)
+    /* Time complexity : O(V+E)  (Reason being in the DFS_helper we traverse through all the adjacency list and that will 
+    be 2*E in undirected and E in directed. The V is present for the case when all the vertices are disconnected)
     */
    
 }

@@ -14,6 +14,6 @@
 
 **Ford fulkerson algorithm**: a maximum flow algorithm and BFS provides better time complexity in comparision to DFS.
 
-**Broadcasting**: systems broadkcast to their neighbours which in turn broadcast to their neighbours.
+**Broadcasting**: systems broadcast to their neighbours which in turn broadcast to their neighbours.
 
 (There are many more applications of BPS and many algorithms based on BFS).

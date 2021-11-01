@@ -24,9 +24,11 @@ vertex and then go to that vertex and do the same thing.
              2----3/  
 
             DFS with source = 0 : 0 1 3 2 4
- * DFS of graph is similiar to preorder traversal of tree only difference being that we maitain a isVisited array to prevent repeatition.
- * In DFS of graph we are given a source vertex we go to that vertex and find the vertices adjacent to it. We find the smallest vertex connect to it 
- and go to that vertex and keep on repeating the same process for non-visited vertices and after a point we visit all the vertices and recursion ends.
+ * DFS of graph is similiar to preorder traversal of tree only difference being that we maitain a isVisited array to prevent
+  repeatition.
+ * In DFS of graph we are given a source vertex we go to that vertex and find the vertices adjacent to it. We find the 
+ smallest vertex connect to itand go to that vertex and keep on repeating the same process for non-visited vertices and 
+ after a point we visit all the vertices and recursion ends.
  */
 void DFS_helper(vector<int> adj[], int s, vector <bool> &visited)
 {

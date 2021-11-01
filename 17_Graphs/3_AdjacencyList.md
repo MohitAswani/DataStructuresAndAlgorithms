@@ -17,7 +17,7 @@
     * Dynamic sized array : 
         * Advantages : cache friendly , easy impl.
         
-        * Disadvantages : wastage of space , addition can becones O(n) due to increase in the size of array.
+        * Disadvantages : wastage of space , addition can become O(n) due to increase in the size of array.
     * Linked list
 
 
