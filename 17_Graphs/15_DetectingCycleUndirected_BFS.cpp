@@ -20,12 +20,11 @@ void printGraph(vector <int> adj[],int V)
         cout<<endl;
     }
 }
-bool BFS_Helper(vector <int> adj[],int s,vector <bool> &visited,vector <int> &parent)
+bool BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
 {
     queue <int> q;
     visited[s]=true;
     q.push(s);
-    parent[s]=-1;
     while(q.empty()==false)
     {
         int u=q.front();
@@ -36,11 +35,6 @@ bool BFS_Helper(vector <int> adj[],int s,vector <bool> &visited,vector <int> &pa
             {
                 q.push(v);
                 visited[v]=1;
-                parent[v]=u;
-            }
-            else if(v!=parent[u])
-            {
-                return true;
             }
         }
     }

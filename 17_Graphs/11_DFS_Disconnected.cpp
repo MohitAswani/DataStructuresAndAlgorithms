@@ -16,8 +16,8 @@ void printGraph(vector<int> adj[], int V)
     }
 }
 /**
- * In DFS OF disconnect graph the basics are same only difference being that we traverse all the vertices in a loop. This lead to printing all 
- the vertices connected a given vertex and then traversal to the next disconnect vertex in the loop.
+ * In DFS OF disconnect graph the basics are same only difference being that we traverse all the vertices in a loop. 
+ This lead to printing all the vertices connected a given vertex and then traversal to the next disconnect vertex in the loop.
  * Eg:
 
             0          3
@@ -47,8 +47,8 @@ void DFS(vector<int> adj[], int v)
         DFS_helper(adj,i,visited);  //all the times this call is made is the number of disconnect components in this graph
     }
 
-    /* Time complexity : O(V+E)  (Reason being in the DFS_helper we traverse through all the adjacency list and that will be 2*E in undirected and E in
-     directed. The V is present for the case when all the vertices are disconnected)
+    /* Time complexity : O(V+E)  (Reason being in the DFS_helper we traverse through all the adjacency list and that will 
+    be 2*E in undirected and E in directed. The V is present for the case when all the vertices are disconnected)
     */
 }
 int main()

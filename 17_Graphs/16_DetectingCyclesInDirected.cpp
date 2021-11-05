@@ -53,6 +53,8 @@ int main()
     addEdge(adj, 3, 1);
     addEdge(adj, 4, 1);
     addEdge(adj, 3, 1);
-    cycleInDirected(adj,V);
+    cout<<boolalpha;
+    cout<<cycleInDirected(adj,V)<<endl;
+    cout<<noboolalpha;
     return 0;
 }

@@ -27,7 +27,7 @@ so on.
             BFS with source = 0 : 0 1 2 3 
  * Also in BFS in graph we ensure there is no repition of vertices.
  * BFS in graphs is similiar to BFS in trees only difference being that in trees we cannot go from child to root but in 
- graph we can move both ways and this can lead to repition so to present this we use a isVisited array and mark it true 
+ graph we can move both ways and this can lead to repition so to prevent this we use a isVisited array and mark it true 
  if we have visited a vertex.
  * Other than that the implementation is same : select a vertex , traverse all adjacent vertices and push them into a  queue 
  and keep doing this until the queue is empty  and all the element have been print once.
