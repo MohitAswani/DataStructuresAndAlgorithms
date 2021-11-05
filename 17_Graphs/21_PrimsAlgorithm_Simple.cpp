@@ -21,7 +21,7 @@ using namespace std;
  * 
  * IMPLEMENTAION EXPLANATION : * First we take a boolean array which tells where the element at index i is included in the 
                                 MST or not.
-                               * We take a key array and store the store the minimum edge in this array.
+                               * We take a key array and store the edges of min length connecting mst to non-mst in this array.
                                * To implement the key part we first initialize the key as infinite. Then we initialize the 
                                key at 0 as 0.
                                * Then we find the minimum edge (which connect mst to non mst's) which is not included in the

@@ -58,6 +58,9 @@ void topologicalSort(vector<pair<ll,ll>> adj[],ll V,vector <ll> &toposort)
  * Reason : Since this is DIRECTED ACYCLIC graph hence there will never be a backward and forward edge on the same edge. 
  So if we just move forward using the topo sort and keep on finding the minimum distance for each edge we get the solution.
  * 
+ * The toposort gives us the order in which we move from less to more dependent vertices so we can just move forward and 
+ keep on finding the minimum distance for each edge using the less dependent vertices.
+ * 
  * For better understanding watch the video "Shortest Path in DAG"
  * 
  */ 

@@ -2,7 +2,7 @@
 #define V 4
 using namespace std;
 /**
- * Dijkstra's algorithm: in this algorithm we need find the minimum distance of every vertices from a given source algorithm.
+ * Dijkstra's algorithm: in this algorithm we need find the minimum distance of every vertices from a given source.
  *
  * This algorithm is quite similiar to the implemenation of Prim's algorithm (Not prim's algorithm)
  *
