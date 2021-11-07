@@ -27,8 +27,8 @@ using namespace std;
                                * Then we find the minimum edge (which connect mst to non mst's) which is not included in the
                                 mst.
                                * Then we included the vertice connected to minimum edge to the mst.
-                               * Then we update the key array with the weight of the edges connect to the min edge vertice 
-                               and these edges are connected to those vertices which are not in mst .
+                               * Then we update the key array with the weight of the edges connecting the min edge vertice 
+                               with vertices which are not in mst .
                                * For better understanding of this concept watch the lecture : "Implementation of Prim's Algorithm C++".
  * 
  */ 

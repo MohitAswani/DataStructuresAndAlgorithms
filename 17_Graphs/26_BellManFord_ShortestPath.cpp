@@ -7,8 +7,8 @@ using namespace std;
  * Bellman ford algorithm: is another shortest path algorithm and the main benefit of using bellman ford is that it also
  works for negative weight edges and negative weight cycles.
  *
- * The idea of this algorithm is to find the shortest path of edge
- length 1 then shortest path of edge length 2 and then that of 3 and so on till V-1 edges.
+ * The idea of this algorithm is to find the shortest path of edge length 1 then shortest path of edge length 2 and then 
+ that of 3 and so on till V-1 edges.
  *
  * Bellman ford is dynamic programming algorithm and we build the solution in bottom up manner by using the solution for
  edges length i-1 to find the solution for edge length i.
