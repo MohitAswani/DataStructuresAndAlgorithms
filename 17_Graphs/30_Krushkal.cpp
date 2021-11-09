@@ -1,8 +1,25 @@
-// C++ program for Kruskal's algorithm to find Minimum Spanning Tree 
-// of a given connected, undirected and weighted graph 
-#include <bits/stdc++.h> 
-using namespace std; 
-
+#include<bits/stdc++.h>
+using namespace std;
+/**
+ * Krushkal's algorithm is used to find the minimum spanning tree.
+ * 
+ * In Krushkal algorithm we pick the smallest edges in such a way to not form a cycle.
+ * 
+ * Idea : * Sort all edges in increasing order.
+                    * Initialize MST=[] res-=0
+					* Do following for every edge e while MST size does not become V-1
+					 	* If adding e to MST does not cause a cycle
+						* MST=MSTu{e}
+						* res=res+e.weight
+			        * return res
+ * 
+ * Implementation(Simple): * To implement this we can simply create a seperate graph for MST and after adding an edge use cycle detection. 
+						   
+						   
+ * Implementation(Simple): * Since we need to sort the edges in increasing order we cannot use adj list or matrix.
+						   * Instead we use an arrary of edges.
+						      
+ */
 // a structure to represent a weighted edge in graph 
 class Edge 
 { 

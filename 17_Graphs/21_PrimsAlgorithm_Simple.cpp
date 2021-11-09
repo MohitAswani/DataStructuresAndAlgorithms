@@ -9,7 +9,7 @@ using namespace std;
  * MINIMUM SPANNING TREE : the spanning tree with minimum sum of weights of all the edges.
  * 
  * MINIMUM SPANNING TREE PROBLEM : in this problem we will be given a weighted,undirected and connected graph and we need 
- to find the minimum spanning tree of the graph.
+ to find the minimum spanning tree of the graph. (every MST has V-1 edges)
  *
  * PRIM'S ALGORITHM : * In this algorithm we divide the vertices in two sets.
                       * One set containing the vertices which are in MST and other set having the ones which are not.
