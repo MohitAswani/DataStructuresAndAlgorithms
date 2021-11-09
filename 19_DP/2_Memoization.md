@@ -8,3 +8,5 @@ The toughest part in DP problems is to come up with recursive solution which has
 Then we just make a memo variable , initialize it a value which is not possible and then we can use that memo variable to store the result of the previous computations in the recursive solution.
 
 We can use DP when the problem has overlapping subproblems.
+
+This is top down approach since we are breaking the main problem into sub-problems and solving the sub-problems.
