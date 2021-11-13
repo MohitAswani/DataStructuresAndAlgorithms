@@ -5,7 +5,7 @@ using namespace std;
 // For better understanding of this solution watch the video "Longest Common Subsequence (Part 2)"
 
 /**
- * @brief Finding the LCS using tabulation method. dp[i][j] is the values of prefix of two strings from 0 to i-1 and 0 to j-1.
+ * @brief Finding the LCS using tabulation method. dp[i][j] is the LCS of prefix of two strings from 0 to i-1 and 0 to j-1.
  * And if s1[i]=s2[j] dp[i][j]=dp[i-1][j-1]+1 else we find the max of dp[i-1][j] and dp[i][j-1].
  * 
  * @param s1 first string
@@ -44,6 +44,8 @@ int LCS(string s1, string s2)
     }
 
     return dp[n][m];
+
+    // Time complexity : O(n*m) since we traverse the 2D matrix once
 }
 int main()
 {

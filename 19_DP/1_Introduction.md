@@ -2,7 +2,7 @@
  
 * Dynamic programming is similiar to recursion (where we can use the same function to solve sub-problems), but instead of solving the same sub-problem over and over again we can store the result of the sub-problem and use it to solve the same sub-problem again.
 
-* In simple words, its is an optimization over plain recursion.
+* In simple words, it is an optimization over plain recursion.
 
 * The idea is to reuse the solutions of sub-problems when there are overlapping sub-problems.
 
