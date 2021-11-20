@@ -21,9 +21,11 @@ using namespace std;
                * In the second itteration we find all the shortest path of edge length 2 or 1.
                * And by this logic we will have the shortest path (having simple edges/no cycles) before or after V-1
                itteration.
-               * And the reason for itterating this loop V-1 times is because the maximum length of a simple path(no cycles)
+               * And the reason for iterating this loop V-1 times is because the maximum length of a simple path(no cycles)
                in a graph having V vertices cannot be more than V-1.
  *
+ *
+ *         ** WATCH THE VIDEO FOR MORE DETAILS **
  */
 void Bellman_Ford(int graph[V][V], int s)
 {
@@ -37,7 +39,7 @@ void Bellman_Ford(int graph[V][V], int s)
             {
                 if (graph[u][v] != 0 && dist[v] > dist[u] + graph[u][v])
                 {
-                    dist[v] = dist[u] + graph[u][v];
+                    dist[v] = dist[u] + graph[u][v];     // relax operation is to check whether we get the shortest path to v through u.
                 }
             }
         }

@@ -20,6 +20,6 @@ void factors(int n)
 }
 int main()
 {
-    factors(2);
+    factors(12);
     return 0;
 }

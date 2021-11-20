@@ -67,6 +67,6 @@ int LCS(string s1, string s2)
 }
 int main()
 {
-    cout << LCS("AGGTAB", "GXTXAYB")<<endl;
+    cout << LCS("abc","abbac")<<endl;
     return 0;
 }

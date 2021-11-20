@@ -10,7 +10,7 @@ using namespace std;
                                          * then we find the minimum distance vertex in the distance array.
                                          * then we go though all the adjacent vertices of this array and update the distances.
                                          (this operation is called RELAX)
-                                         * and keep the same process until we loop through all the vertices.
+                                         * and keep repeating the same process until we loop through all the vertices.
  *
  * Fact about dijkstra's algorithm : * Does not work if the graph contains negative weight edge.
                                      * And the shortest path a given vertex might change if we add common weight to all

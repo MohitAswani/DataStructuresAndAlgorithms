@@ -1,5 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
+/**
+ * @brief  Recursive solution for the problem in which we are given the sum of coins we want and 
+ * the values of coins and we need find the number of cases having the sum as the given sum 
+ * which can be formed using the given coins.
+ * 
+ * @param coins Array containing the values of the coins
+ * @param size size of the array
+ * @param sum Requirred sum
+ * @return int Total cases with given sum using the given coins.
+ */
 int coinChange(int coins[], int size, int sum)
 {
     if(sum==0)

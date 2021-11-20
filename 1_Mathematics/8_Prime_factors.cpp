@@ -37,6 +37,6 @@ int main()
 {
     int n;
     cin >> n;
-    prime(n);
+    prime(12);
     return 0;
 }
