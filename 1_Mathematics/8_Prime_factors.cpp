@@ -1,6 +1,15 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief Since the divisors exist in pairs, if there is any prime divisor (other than 1 and n itself) it will exist from 2 to n^(½). 
+ * Since we are dividing it completely by the prime numbers, till the time it reaches the composite number it will not remain divisible by the composite number.
+ * But when our last prime factor , the largest prime factor, has only a power 1 then we fall into a case such that the number is not printed.
+ * 
+ * Time complexity : O(n^1/2).
+ * Auxillary space : O(1).
+ * @param n 
+ */
 void prime(int n)
 {
     if (n <= 1)

@@ -2,6 +2,13 @@
 #define ll long long
 #define rep(i, t) for (ll i = 0; i < t; i++)
 using namespace std;
+/**
+ * @brief This again is based on the fact that the divisors of number exist in pairs. We can solve this problem using a single loop but since we want to print the numbers in order we use two loops.
+ * 
+ * Time complexity : O(n^1/2).
+ * Auxillary space : O(1).
+ * @param n 
+ */
 void factors(int n)
 {
     ll i;

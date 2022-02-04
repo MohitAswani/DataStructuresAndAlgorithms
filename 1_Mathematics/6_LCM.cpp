@@ -12,6 +12,10 @@ long long gcd(int a,int b)
 ll lcm(int a,int b)
 {
     return (a*b)/gcd(a,b);
+
+    // Time complexity : O(log(min(a,b)))
+    // Auxillary space : O(log(min(a,b)))
+    // Logic : this solution is based on the fact that a*b=LCM(a,b)*GCD(a,b)
 }
 int main()
 {

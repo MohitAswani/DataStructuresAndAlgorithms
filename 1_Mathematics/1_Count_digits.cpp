@@ -1,6 +1,15 @@
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief This is the most efficient code for find the number of digits in a number.
+ * 
+ * Time complexity : O(1).
+ * Auxillary space : O(1). 
+ * 
+ * @param n 
+ * @return long long 
+ */
 long long digits(int n)
 {
     return floor(log10(n)+1);
