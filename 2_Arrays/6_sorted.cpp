@@ -1,6 +1,16 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief Just check the (i+1) th element is greater than i th element.
+ * 
+ * Time complexity : O(n)
+ * Space complexity : O(1)
+ * @param arr 
+ * @param size 
+ * @return true 
+ * @return false 
+ */
 bool op(int arr[], int size)
 {
     for(ll i=0;i<size-1;i++)

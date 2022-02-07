@@ -1,6 +1,16 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief Just traversing through the arrays and finding the maximum.
+ * 
+ * Time complexity : O(n)
+ * Space complexity : O(1)
+ * 
+ * @param arr 
+ * @param size 
+ * @return int 
+ */
 int op(ll arr[], int size)
 {
     ll max=size-1;

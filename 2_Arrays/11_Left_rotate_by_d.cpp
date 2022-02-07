@@ -1,6 +1,16 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief To reverse the array by d we reverse the first d element. Then we reverse the rest of the n-d elements. Finally we reverse the whole array. This is equivalent to left rotating the array by d.
+ * 
+ * Time complexity : O(n)
+ * Space complexity : O(1)
+ * 
+ * @param arr 
+ * @param s 
+ * @param n 
+ */
 void rev(vector <ll> &arr,int s,int n)
 {
     while(s<n)

@@ -1,6 +1,15 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief Here we are just swapping the i th and the n-i th element to reverse the array.
+ * 
+ * Time complexity : O(n)
+ * Space complexity : O(1)
+ * 
+ * @param arr 
+ * @param size 
+ */
 void op(int arr[], int size)
 {
     for(ll i=0;i<(size/2);i++)
