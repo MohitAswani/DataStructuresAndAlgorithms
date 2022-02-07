@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief  Iterating through the array to find the soln. Linear search.
+ * 
+ * Time complexity : O(n)
+ * Space complexity : O(1)
+ * 
+ * @param arr 
+ * @param size 
+ * @param x 
+ * @return int 
+ */
 int op(int arr[], int size,int x)
 {
     for(ll i=0;i<size;i++)

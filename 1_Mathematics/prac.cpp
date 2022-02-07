@@ -1,30 +1,74 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #define ll long long
 #define db double
 using namespace std;
+class Solution
+{
+public:
+    void setZeroes(vector<vector<int>> &matrix)
+    {
+        int m = matrix.size();
+        int n = matrix[0].size();
+        for (int i = 0; i < m; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (matrix[i][j] == 0)
+                {
+                    if(matrix[i][0]==2222)
+                    {
+                        matrix[i][0]=3333;
+                    }
+                    else
+                    {
+                        matrix[i][0] = 1111;
+                    }
+                    if(matrix[0][j]==2222)
+                    {
+                        matrix[0][j]=3333;
+                    }
+                    else
+                    {
+                        matrix[i][] = 1111;
+                    }
+                    matrix[0][j] = 2222;
+                }
+            }
+        }
 
-// The two solutions find the GCD using euc 
-ll gcd_rec(int a,int b)
-{
-    if(b==0)
-    {
-        return a;
+        for (int i = 0; i < m; i++)
+        {
+            if (matrix[i][0] == 1111)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (matrix[i][j] != 2222)
+                        matrix[i][j] = 0;
+                }
+            }
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            if (matrix[0][i] == 2222)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    matrix[j][i] = 0;
+                }
+            }
+        }
     }
-    return gcd_rec(b,a%b);
-}
-ll gcd_itt(int a,int b)
+};
+int main()
 {
-    while(b!=0)
-    {
-        ll temp_a=a;
-        a=b;
-        b=temp_a%b;
-    }
-    return a;
-}
-int main(){
-    int a,b;
-    // cin>>a>>b;
-    cout<<gcd_rec(30,45)<<endl;
+    int a, b;
+    vector<vector<int>> matrix =
+        {
+            {0, 2, 3, 0},
+            {5, 2, 7, 8},
+            {0, 10, 11, 12}};
+    Solution sol;
+    sol.setZeroes(matrix);
     return 0;
 }
