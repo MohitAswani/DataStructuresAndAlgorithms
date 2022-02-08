@@ -1,6 +1,14 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief In this we just check the remainder of two consecutive element if != len++ else len=1
+ * 
+ * Time complexity : O(n)
+ * Space complexity : O(1)
+ * 
+ * @param arr 
+ */
 void op(vector<ll> &arr)
 {
     ll size=arr.size();

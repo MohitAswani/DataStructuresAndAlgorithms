@@ -1,6 +1,14 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief Here we just finding the maximum of frequency of one.
+ * 
+ * Time complexity : O(n)
+ * Space complextiy : O(1)
+ * 
+ * @param arr 
+ */
 void op(vector<ll> &arr)
 {
     ll size=arr.size();

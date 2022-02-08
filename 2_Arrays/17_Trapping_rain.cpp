@@ -1,6 +1,15 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief In this solution we traverse through the whole array on both sides and find the left max and right max.
+ * Then we subtract each element from the minimum of these. This gives us the water trapped in that well.
+ * 
+ * Time complexity : O(n)
+ * Space complextiy : O(1)
+ * 
+ * @param arr 
+ */
 void op(vector<ll> &arr)
 {
     ll size=arr.size();
