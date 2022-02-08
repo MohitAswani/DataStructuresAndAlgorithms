@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
+/**
+ * @brief This is another example of window sliding technique.
+ * 
+ * @param N 
+ * @param n 
+ */
 void op(ll N,ll n)
 {
     vector <ll> ans(n);
