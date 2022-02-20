@@ -1,5 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
+/**
+ * @brief In the below function we traversing through the string using tail recursion and finding its reverse. If the string is completely traversed we compare its reverse to the original string to check for palindrome.
+ * 
+ * Time complexity : O(len(s))
+ * Auxillary space : O(len(s)) due to recursive call stack
+ * 
+ * @param s 
+ * @param r 
+ * @param k 
+ * @return true 
+ * @return false 
+ */
 bool func1(string s,string r="",int k=0)
 {
     if(k==s.length())

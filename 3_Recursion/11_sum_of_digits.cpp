@@ -1,5 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
+/**
+ * @brief We are finding the sum of digits of a number by using modulo 10 method.
+ * 
+ * Time complexity : O(digits(n))
+ * Auxillary space : O(digits(n)) 
+ * 
+ * @param n 
+ * @return int 
+ */
 int func(int n)
 {
     if(n<=9)

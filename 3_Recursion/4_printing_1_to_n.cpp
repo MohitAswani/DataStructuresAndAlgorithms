@@ -1,5 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
+/**
+ * @brief 
+ * 
+ * Time complexity : O(n)
+ * Auxillary space : O(n) due to recursive call stack
+ * 
+ * @param n 
+ */
 void func(int n)
 {
     if (n == 0)
