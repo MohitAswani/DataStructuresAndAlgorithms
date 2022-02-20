@@ -1,5 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
+/**
+ * @brief In this problem we just pick one positon of the string and swap all the elements with all the elements at other positions.
+ * 
+ * Time complexity : O(n*n!)
+ * Auxillary space : O(n)               where n is the length of the string.
+ * 
+ * @param s 
+ * @param i 
+ */
 void perm(string s,int i=0)
 {
     if(i==s.length()-1)
