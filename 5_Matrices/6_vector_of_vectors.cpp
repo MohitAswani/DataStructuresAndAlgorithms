@@ -1,5 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+
+Advantages:
+
+* In this data structure even the number of rows is dynamic.
+
+* This is data structure is even easier to pass to a function size we don't need to pass in any size.
+
+* Rest is same as the previous method.
+
+*/
 void print(vector<vector<int>> &arr)
 {
     cout << "PRINTING USING PRINT FUNCTION: " << endl;
@@ -35,12 +46,5 @@ int main(){
     }
 
     print(arr);
-    /*
-    Adv: 
-    *Even the number of rows is dynamic
-
-    Rest is same as the previous method.
-
-    */
     return 0;
 }

@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int R = 3, C = 2;
+/**
+ * @brief In the below function we are just traversing the first row , last column , last row in reverse order and finally the first column in reverse order. 
+ * 
+ * Time complexity : O(R*C).
+ * 
+ * @param arr 
+ */
 void boundary(int arr[R][C])
 {
     for (int i = 0; i < C; i++)
@@ -25,7 +32,6 @@ void boundary(int arr[R][C])
             cout << arr[i][0] << " ";
         }
     }
-    // Time complexity is theta(R+C)
 }
 int main()
 {

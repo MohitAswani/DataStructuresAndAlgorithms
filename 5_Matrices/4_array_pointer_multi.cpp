@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+This method is quite similiar to the previous method only difference being that instead of creating double pntr we create an array of pointer (which is stored statically) and allocate spaces to each element of that array of pointer
+*/
 void print(int *arr[], int m, int n)
 {
     cout << "PRINTING USING PRINT FUNCTION: " << endl;
@@ -14,7 +17,7 @@ void print(int *arr[], int m, int n)
 int main()
 {
     int m = 3, n = 2;
-    int *arr[m]; //creating array of pointer
+    int *arr[m]; // creating array of pointer
 
     for (int i = 0; i < m; i++)
         arr[i] = new int[n];
@@ -34,10 +37,6 @@ int main()
         cout << endl;
     }
 
-    print(arr,m,n);
-    /*
-    This method is quite similiar to the previous method only difference being that instead of creating double pntr we create an array
-    of pointer (which is stored statically) and allocate spaces to each element of that array of pointer
-    */
+    print(arr, m, n);
     return 0;
 }

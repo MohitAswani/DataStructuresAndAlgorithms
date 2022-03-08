@@ -1,6 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int R = 3, C = 5;
+/**
+ * @brief To spirally traverse a matrix we take 4 variables and print the traversal using those 4 variables. 
+ * 
+ * Time complexity : O(R*C)
+ * Auxillary space : O(1)
+ * 
+ * @param arr 
+ */
 void spiral(int arr[R][C])
 {
     int left = 0, right = C - 1, top = 0, bottom = R - 1; //we maintain these 4 variables to print the matrix
@@ -26,8 +34,6 @@ void spiral(int arr[R][C])
             left++;
         }
     }
-
-    //we are traversing each element only once so time complexity is theta(R*C)
 }
 int main()
 {

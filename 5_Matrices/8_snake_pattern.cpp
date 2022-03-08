@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 const int R=4,C=4;
+/**
+ * @brief In the below function we just print the elements of a row in correct or reverse order based on the i.
+ * 
+ * @param arr 
+ */
 void snake_pattern(int arr[R][C])
 {
     for(int i=0;i<R;i++)
@@ -20,7 +25,6 @@ void snake_pattern(int arr[R][C])
             }
         }
     }
-    //Time complexity = theta(R*C)
 }
 int main(){
     int arr[R][C]={{1,2,3,4},

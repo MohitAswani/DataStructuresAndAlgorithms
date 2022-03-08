@@ -11,8 +11,10 @@ void print(int arr[R][C])
     cout<<endl;
 }
 int main(){
+
+    // Unfortunatily there is not way to pass an 2D matrix to function without declaring global sizes..
+
     int arr[R][C]={10,20,30,40,50,60};
     print(arr);
-    // Unfortunatily there is not way to pass both the sizes of the matrix as variable.
     return 0;
 }

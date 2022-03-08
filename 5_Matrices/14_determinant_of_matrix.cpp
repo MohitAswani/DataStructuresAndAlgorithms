@@ -1,6 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 4;
+/**
+ * @brief The below function is used to get the cofactor of the matrix in the temp array. We get the cofactor by excluding all the element in the row and column of the element whose cofactor is to be found.
+ * 
+ * Time complexity : O(n*n)
+ * Auxillary space : O(1)
+ * 
+ * @param mat 
+ * @param temp 
+ * @param p 
+ * @param q 
+ * @param n 
+ */
 void getCofactor(int mat[N][N], int temp[N][N], int p, int q, int n)
 {
     int i = 0, j = 0;
@@ -20,6 +32,16 @@ void getCofactor(int mat[N][N], int temp[N][N], int p, int q, int n)
         }
     }
 }
+/**
+ * @brief The following function is used to get the determinant of the matrix using recursion. To find the determinant we multiply the first row elements with the determinant of its cofactor and the sign according to its order. And we repeat this process recursively.
+ * 
+ * Time complexity : O(N*N)
+ * Auxillary space : O(N*N)
+ * 
+ * @param mat 
+ * @param n 
+ * @return int 
+ */
 int determinant(int mat[N][N], int n)
 {
     int D = 0;
