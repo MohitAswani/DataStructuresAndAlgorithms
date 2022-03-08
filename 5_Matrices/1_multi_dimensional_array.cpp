@@ -13,7 +13,7 @@ int main(){
     int arr1[][2]={{1,2},{3,4}};
     int arr2[][2][2]={{{1,2},{3,4}},{{5,6},{7,8}}};
     /*
-    We can only omit the first dimension while initializing an 2D array
+    We can only omit the first dimension while initializing an 2D/3D array
     */
     return 0;
 }
