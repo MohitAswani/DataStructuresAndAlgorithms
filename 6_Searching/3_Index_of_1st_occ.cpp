@@ -1,5 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
+/**
+ * @brief To find the first occurence of a number using binary search we first find the number using simple binary search. Then we check if the previous number is same as the current number. If yes then we make r=mid-1. And we keep on doing this until either the previous number is not x or we reach 0.
+ * 
+ * Time complexity: O(logn)
+ * Space complexity: O(1).
+ * 
+ * @param arr 
+ * @param n 
+ * @param x 
+ * @return int 
+ */
 int first_occ(int arr[],int n,int x)
 {
     int l=0;

@@ -1,5 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
+/**
+ * @brief To find the square root of n we take l=0,r=n. Then we just search for a number such that mid*mid==x. Also we need to find the largest number which satisfies mid*mid<x and hence we store it in a variable and output the last/largest value. That is the condition when the number is not a perfect square.
+ * 
+ * time complexity : O(logn)
+ * space complexity: O(1)
+ * 
+ * @param x 
+ * @return int 
+ */
 int sqaure_root(int x)
 {
     int l=0,r=x;
@@ -14,15 +23,10 @@ int sqaure_root(int x)
         else if(mid*mid<x)
         {
             l=mid+1;
-            ans=mid; //we need to find the largest number which satisfies mid*mid<x and hence we store it in a variable and output the last/largest value.
-            //this is the condition when the number is not a perfect sqaure.
+            ans=mid; 
         }
     }
     return ans;
-
-    //time complexity : O(logn)
-    //space complexity: O(1)
-    //So if we have a increasing function then we can use binary search to find its values.
 }
 int main(){
     cout<<sqaure_root(0)<<endl;

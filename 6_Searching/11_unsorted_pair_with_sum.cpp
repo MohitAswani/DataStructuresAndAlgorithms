@@ -1,9 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
+/**
+ * @brief To check whether there exists a pair with sum = x in the given array we use hashing. We traverse through the array and check whether there exist x-arr[i] in the hash table.
+ * 
+ * Time complexity : O(n)
+ * Auxillary space : O(n)
+ * 
+ * @param arr 
+ * @param size 
+ * @param x 
+ * @return int 
+ */
 int sum(int arr[],int size,int x)
 {
-    //We need to check whether there exists a pair with sum = x in the given array
-    //For this we use hashing 
     vector<int> hash(size,0);
     for(int i=0;i<size;i++)
     {

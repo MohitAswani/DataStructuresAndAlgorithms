@@ -1,5 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
+/**
+ * @brief Divide and conquor method to perform binary search.
+ * 
+ * Time complexity : O(logn)
+ * Auxillary space : O(1)
+ * 
+ * @param arr 
+ * @param n 
+ * @param x 
+ * @return int 
+ */
 int binary_search(int arr[],int n,int x)
 {
     int l=0;
@@ -21,10 +32,6 @@ int binary_search(int arr[],int n,int x)
         }
     }
     return -1;
-    /*
-    Time complexity: O(logn)
-    Space complexity: O(1)
-    */
 }
 int main(){
     int arr[]={10,15};

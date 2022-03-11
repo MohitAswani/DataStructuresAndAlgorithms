@@ -19,12 +19,22 @@ int binary_search(int arr[], int x, int l, int r)
     {
         return mid;
     }
-    /*
-    Time complexity: O(logn)
-    Space complexity: O(logn) due to function call overhead of logn recursive calls.
-    */
 }
-int search_in_infinite(int arr[], int size, int x)   //this algorithm is commonly known as unbounded binary search
+/**
+ * @brief To search in an infinite array we first find the index of a number where arr[r]<x and to search we keep on mutliplying the r by 2 until we satisfy the condition. Then we perform the binary search from (r/2+1,r).
+ *
+ * This algorithm is commonly known as unbounded binary search
+ *
+ * Time complexity : O(log n)
+ * Auxillary space : O(log n) due to the binary search
+   (In the above time complexities n is the position where we can find number)
+ *
+ * @param arr
+ * @param size
+ * @param x
+ * @return int
+ */
+int search_in_infinite(int arr[], int size, int x)
 {
     if (arr[0] == x)
         return 0;
@@ -32,17 +42,11 @@ int search_in_infinite(int arr[], int size, int x)   //this algorithm is commonl
     int r = 1;
     while (arr[r] < x)
         r = 2 * r;
-    
-    //time complexity of the above loop is O(2*logn) (n is position)
 
     if (arr[r] == x)
         return r;
 
-    return binary_search(arr, x, r / 2 + 1, r - 1); //time comp also O(logn)
-    //we search between r/2+1 and r-1.
-
-    //time complexity : O(logn)  (here n is the position)
-    //space complexity : O(logn)
+    return binary_search(arr, x, r / 2 + 1, r - 1); 
 }
 int main()
 {
