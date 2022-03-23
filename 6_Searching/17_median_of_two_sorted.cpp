@@ -1,16 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
+/**
+ * @brief In this algorithm we assume a1 is the smaller array and a2 is the bigger array. 
+ * And if this assumption is not true then we basically divide the two arrays in two parts such that left part contains all the smaller elements and right half contains all the bigger elements.
+ * 
+ * We do binary search in the smaller array and try to find a index for which the above condition will be satisfied. 
+ * 
+ * If this condition is satisfied we find the median by :
+ * 
+ * 1) If sum of lengths is even : maximum of the maximum of the left part of the arrays.
+ * 
+ * 2) If sum of lengths is odd : average of maximum of the maximum of the left part of the arrays and minimum of the minimum of the right part of the arrays.
+ * 
+ * To understand watch the video.
+ * 
+ * Time complexity : O(n1)
+ * Auxillary space : O(1)
+ * 
+ * @param arr1 
+ * @param n1 
+ * @param arr2 
+ * @param n2 
+ * @return double 
+ */
 double median(int arr1[], int n1, int arr2[], int n2)
 {
-    /*In this algorithm we basically divide the two arrays in two parts such that left part contains all the smaller elements and 
-    right half contains all the bigger elements.
-    We do binary search in the smaller array and try to find a index for which the above condition will be satisfied 
-    min1=min element of right side of a1
-    max1=max element of left side of a1
-    min2=min element of right side of a2
-    max2=max element of left side of a2
-    All these elements are the boundary elements of arrays.
-    */
     if (n1 < n2)
     {
         int begin1 = 0, end1 = n1;
@@ -75,10 +89,6 @@ double median(int arr1[], int n1, int arr2[], int n2)
         swap(arr1, arr2);
     }
     return 0;
-
-    /*The time complexity of the above code is O(log(n1)) where n1 is the size of the smaller array. The time complexity is this
-    since we are doing binary search in the smaller array.
-    */
 }
 int main()
 {

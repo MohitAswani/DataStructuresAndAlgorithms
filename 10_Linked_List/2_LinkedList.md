@@ -4,7 +4,7 @@
 
 * Instead of storing elements in contigous locatioon each element/node of linked list contains a reference to the next element/node. And it can directly access that element though that reference.
 
-* Dude to this insertion and deletion at any point in the linked list is very efficient.
+* Due to this insertion and deletion at any point in the linked list is very efficient.
 
 * Last element in the linked list contains a reference to null.
 
