@@ -30,24 +30,38 @@ void traverse(Node *head)
 }
 
 /**
- * @brief To delete element at the beginning we move the head to head->next and de-allocate the memory for head.
+ * @brief To delete element at the end we check the number of nodes, if no nodes then linked list empty, if one node we make the head as null else we find the second last node of the linked list and make its next as null and deallocate the memory allocated to that particular node.
  *
- * Time complexity : O(1)
+ * Time complexity : O(n)
  * Auxillary space : O(1)
  *
  * @param head
  * @param data
  */
-void deleteAtBegin(Node *&head)
+void deleteAtEnd(Node *&head)
 {
     if (head == NULL)
     {
         cout << "Linked list empty" << endl;
         return;
     }
-    Node *head_ref = head;
-    head = head->next;
-    delete head_ref;
+    else if (head->next == NULL)
+    {
+        delete head;
+        return;
+    }
+    else
+    {
+        Node *curr = head;
+        while (curr->next->next != NULL)
+        {
+            curr = curr->next;
+        }
+
+        delete curr->next;
+        curr->next=NULL;
+        return ;
+    }
 }
 int main()
 {
@@ -57,7 +71,7 @@ int main()
     head->next->next = new Node(30);
 
     traverse(head);
-    deleteAtBegin(head);
+    deleteAtEnd(head);
     traverse(head);
 
     return 0;

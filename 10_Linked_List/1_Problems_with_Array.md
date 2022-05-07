@@ -15,4 +15,4 @@
 
 * Its hard to merge sorted sequences frequently in array cause we will always need an extra space to store the merged sequence. But if we use linked list then we do not need to allocate extra space for next linked list.
 
-* Another practical issue with using array is when the memory available to us is fragment then we cannot allocate large enough contiguous memory for array. But if we were using linked list then this problem wont arise because it does not use contigous memory.
+* Another practical issue with using arrays is that when the memory available to us is in terms of fragment then we cannot allocate large contiguous memories for array. But if we were using linked list then this problem wont arise because it does not use contigous memory.
