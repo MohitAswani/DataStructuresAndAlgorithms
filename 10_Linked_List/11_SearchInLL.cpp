@@ -14,12 +14,6 @@ public:
         next = NULL;
     }
 };
-
-/**
- * @brief 
- * 
- * @param head 
- */
 void traverse(Node *head)
 {
 

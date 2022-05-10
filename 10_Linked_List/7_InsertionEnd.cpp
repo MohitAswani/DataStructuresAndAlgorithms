@@ -28,7 +28,7 @@ void traverse(Node *head){
 /**
  * @brief To add an element at the end of linked list we find the node whose next is null (which is the last node) and we add our node next to that end node.
  * 
- * Time complexity : O(n)
+ * Time complexity : O(n)  (We can do it in O(1) if we store a reference to the last element of the linked list)
  * Auxillary space : O(1)
  * 
  * @param head 

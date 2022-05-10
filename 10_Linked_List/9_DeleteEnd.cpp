@@ -48,6 +48,7 @@ void deleteAtEnd(Node *&head)
     else if (head->next == NULL)
     {
         delete head;
+        head=NULL;
         return;
     }
     else

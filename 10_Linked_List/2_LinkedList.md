@@ -2,7 +2,7 @@
 
 * Linked list is a linear , sequencial data structure like arrays. But unlike arrays, linked list does not store its data in contiguous memory locations.
 
-* Instead of storing elements in contigous locatioon each element/node of linked list contains a reference to the next element/node. And it can directly access that element though that reference.
+* Instead of storing elements in contigous locations each element/node of linked list contains a reference to the next element/node. And it can directly access that element though that reference.
 
 * Due to this insertion and deletion at any point in the linked list is very efficient.
 

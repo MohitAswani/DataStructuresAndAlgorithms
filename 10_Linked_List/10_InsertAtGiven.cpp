@@ -30,7 +30,15 @@ void traverse(Node *head)
 }
 
 /**
- * @brief To add an element at the end of linked list we find the node whose next is null (which is the last node) and we add our node next to that end node.
+ * @brief To add an element at a given position do the following : 
+ * 
+ * 1) Check if the element needs to be add at the beginning.
+ * 
+ * 2) If not then more the current by pos-2 positions (practical observation) which lands us at the position just before the position where the element is to be inserted.
+ * 
+ * 3) If curr becomes null in this process then the linked list is too short for the required insertion.
+ * 
+ * 4) Else insert the given element at the curr->next positon.
  *
  * Time complexity : O(n)
  * Auxillary space : O(1)
@@ -40,35 +48,25 @@ void traverse(Node *head)
  */
 void insertAtGiven(Node *&head, int data, int pos)
 {
-    Node *curr = head;
-    Node *prev = NULL;
-    while (curr->next != NULL && pos != 1)
-    {
-        prev=curr;
-        curr=curr->next;
-        pos--;
-    }
+    Node *temp=new Node(data);
 
-    if(prev==NULL){   // Case when the linked list is empty
-        Node *temp=new Node(data);
+    if(pos==1){  // if the element is to be inserted at the beginning
         temp->next=head;
         head=temp;
     }
-    else if(curr->next==NULL&&pos==2)  // Case when the element is to be inserted at the end and list is non-empty 
-    {
-        Node *temp=new Node(data);
-        curr->next=temp;
-        temp->next=NULL;   
+
+    Node *curr=head;
+    for(int i=1;i<pos-2&&curr!=NULL;i++){   // find the correct position for element insertion
+        curr=curr->next;
     }
-    else if(curr->next==NULL&&pos>2)  // Case when the list doesn't have enough elements.
-    {
-        cout<<"NOT ENOUGH ELEMENTS IN THE LINKED LIST"<<endl;
+
+    if(curr==NULL){    // Linked list too short to insert
+        return ;
     }
-    else{     // Case when element is to insert in the middle somewhere
-        Node *temp=new Node(data);
-        prev->next=temp;
-        temp->next=curr;
-    }
+
+    temp->next=curr->next;          // insertion at curr->next
+    curr->next=temp;
+
 }
 int main()
 {
@@ -78,7 +76,7 @@ int main()
     head->next->next = new Node(30);
 
     traverse(head);
-    insertAtGiven(head, 40,4);
+    insertAtGiven(head, 40,2);
     traverse(head);
 
     return 0;

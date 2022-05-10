@@ -27,10 +27,10 @@ void traverse(Node *head){
  * 
  * If none of the above conditions are true we traverse to the last element of linked list and make the next of previous element as null and delete the last element.
  * 
- * Time complexity : O(n)  (Due list traversal)
+ * Time complexity : O(n)  (Due to list traversal)
  * Auxillary space : O(1)
  * 
- * We can reduce time complexity of all the operations at the end by maitaining a tail pointer in the double linked list but the issue with maintaining a tail pointer is that we need to update this tail pointer with very operation we perform.
+ * We can reduce time complexity of all the operations at the end by maitaining a tail pointer in the double linked list but the issue with maintaining a tail pointer is that we need to update this tail pointer with every operation we perform.
  * 
  * @param head 
  */
