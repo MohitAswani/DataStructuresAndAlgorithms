@@ -20,6 +20,9 @@ class Node{
  * 
  * If none of the above conditions are true we make the previous of head->next as null and make head->next as the head and delete the previous head.
  * 
+ * Time complexity : O(1)
+ * Auxillary space : O(1)
+ * 
  * @param head 
  */
 void deleteAtBegin(Node *&head){
