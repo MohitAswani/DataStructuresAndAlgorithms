@@ -20,10 +20,10 @@ long long factorial_rec(int n)
 }
 /**
  * @brief f(n)=1*2*3*4.....n.
+ * The itterative solution is better since it takes less auxillary space.
  * 
  * Time complexity : O(n).
  * Auxillary space : O(1).
- * The itterative solution is better since it has less auxillary space.
  * 
  * @param n 
  * @return long long 
