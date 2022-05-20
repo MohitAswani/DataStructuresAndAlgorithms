@@ -48,7 +48,7 @@ void deleteAtEnd(Node *&head)
     else if (head->next == NULL)
     {
         delete head;
-        head=NULL;
+        head = NULL;
         return;
     }
     else
@@ -60,8 +60,8 @@ void deleteAtEnd(Node *&head)
         }
 
         delete curr->next;
-        curr->next=NULL;
-        return ;
+        curr->next = NULL;
+        return;
     }
 }
 int main()

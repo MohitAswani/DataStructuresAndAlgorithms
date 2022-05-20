@@ -30,14 +30,14 @@ void traverse(Node *head)
 }
 
 /**
- * @brief To add an element at a given position do the following : 
- * 
+ * @brief To add an element at a given position do the following :
+ *
  * 1) Check if the element needs to be add at the beginning.
- * 
- * 2) If not then more the current by pos-2 positions (practical observation) which lands us at the position just before the position where the element is to be inserted.
- * 
+ *
+ * 2) If not then move the current by pos-2 positions (practical observation) which lands us at the position just before the position where the element is to be inserted.
+ *
  * 3) If curr becomes null in this process then the linked list is too short for the required insertion.
- * 
+ *
  * 4) Else insert the given element at the curr->next positon.
  *
  * Time complexity : O(n)
@@ -48,25 +48,28 @@ void traverse(Node *head)
  */
 void insertAtGiven(Node *&head, int data, int pos)
 {
-    Node *temp=new Node(data);
+    Node *temp = new Node(data);
 
-    if(pos==1){  // if the element is to be inserted at the beginning
-        temp->next=head;
-        head=temp;
+    if (pos == 1)
+    { // if the element is to be inserted at the beginning
+        temp->next = head;
+        head = temp;
+        return;
     }
 
-    Node *curr=head;
-    for(int i=1;i<pos-2&&curr!=NULL;i++){   // find the correct position for element insertion
-        curr=curr->next;
+    Node *curr = head;
+    for (int i = 1; i < pos - 2 && curr != NULL; i++)
+    { // find the correct position for element insertion
+        curr = curr->next;
     }
 
-    if(curr==NULL){    // Linked list too short to insert
-        return ;
+    if (curr == NULL)
+    { // Linked list too short to insert
+        return;
     }
 
-    temp->next=curr->next;          // insertion at curr->next
-    curr->next=temp;
-
+    temp->next = curr->next; // insertion at curr->next
+    curr->next = temp;
 }
 int main()
 {
@@ -76,7 +79,7 @@ int main()
     head->next->next = new Node(30);
 
     traverse(head);
-    insertAtGiven(head, 40,2);
+    insertAtGiven(head, 40, 2);
     traverse(head);
 
     return 0;
