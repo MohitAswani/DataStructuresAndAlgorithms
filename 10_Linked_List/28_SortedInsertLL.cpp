@@ -62,7 +62,7 @@ void sortedInsertion(Node *&head,int data){
                 return ;
             }
             
-            prev->next=node;  // Case when we find a bigger node.
+            prev->next=node;  // Case when we find a bigger node other than the head.
             node->next=curr;
             return ;
         }

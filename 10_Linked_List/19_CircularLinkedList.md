@@ -22,4 +22,4 @@
 
 ## Disadvantages :
 
-* Implemntation of operations becomes more complex.
+* Implementation of operations becomes more complex.

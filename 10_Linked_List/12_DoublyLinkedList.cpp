@@ -4,7 +4,6 @@
 using namespace std;
 /**
  * @brief Doubly linked contains a reference to its previous as well as next node.
- * 
  */
 class Node{
     public:

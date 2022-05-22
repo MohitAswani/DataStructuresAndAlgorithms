@@ -34,7 +34,7 @@ void traverse(Node *head)
  *
  * 1) Check if the element needs to be add at the beginning.
  *
- * 2) If not then move the current by pos-2 positions (practical observation) which lands us at the position just before the position where the element is to be inserted.
+ * 2) If not then move the current by till position pos-2 (practical observation) which lands us at the position just before the position where the element is to be inserted.
  *
  * 3) If curr becomes null in this process then the linked list is too short for the required insertion.
  *
@@ -58,7 +58,7 @@ void insertAtGiven(Node *&head, int data, int pos)
     }
 
     Node *curr = head;
-    for (int i = 1; i < pos - 2 && curr != NULL; i++)
+    for (int i = 0; i < pos - 2 && curr != NULL; i++)
     { // find the correct position for element insertion
         curr = curr->next;
     }
@@ -79,7 +79,7 @@ int main()
     head->next->next = new Node(30);
 
     traverse(head);
-    insertAtGiven(head, 40, 2);
+    insertAtGiven(head, 40, 4);
     traverse(head);
 
     return 0;
