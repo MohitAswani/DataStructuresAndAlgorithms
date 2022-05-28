@@ -32,7 +32,7 @@ class TwoStacks{
     {
         if(top1<top2-1)
         {
-            top2++;
+            top2--;
             arr[top2]=x;
         }
         else

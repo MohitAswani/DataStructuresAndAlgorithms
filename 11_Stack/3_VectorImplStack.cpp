@@ -1,18 +1,19 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #define ll long long
 #define db double
 using namespace std;
 
 /**
  * @brief The following is an vector implementation of stack ds and it is dynamically sized.
- * 
+ *
  * The time complexity of push and pop on average is O(1).
- * 
+ *
  */
-class myStack{
-    vector <ll> v;
+class myStack
+{
+    vector<ll> v;
 
-    public:
+public:
     void push(ll x)
     {
         v.push_back(x);
@@ -20,45 +21,47 @@ class myStack{
 
     ll pop()
     {
-        if(this->isEmpty())
+        if (this->isEmpty())
         {
-            cout<<"UNDERFLOW"<<endl;
+            cout << "UNDERFLOW" << endl;
             return -1;
         }
 
-        ll top=v.back();
+        ll top = v.back();
         v.pop_back();
-        return top; 
+        return top;
     }
 
     ll peek()
     {
-        if(this->isEmpty())
+        if (this->isEmpty())
         {
-            cout<<"UNDERFLOW"<<endl;
+            cout << "UNDERFLOW" << endl;
             return -1;
         }
 
         return v.back();
     }
 
-    bool isEmpty(){
+    bool isEmpty()
+    {
         return v.empty();
     }
 
     ll stackSize()
     {
-       return v.size();
+        return v.size();
     }
 };
-int main(){
+int main()
+{
 
     // CPP stack's behaviour on peek and pop on empty stack is undefined.
 
     myStack s;
 
-    cout<<s.pop()<<endl;
-    cout<<s.peek()<<endl;
+    cout << s.pop() << endl;
+    cout << s.peek() << endl;
 
     s.push(10);
     s.push(20);

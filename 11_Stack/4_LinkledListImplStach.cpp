@@ -1,49 +1,51 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #define ll long long
 #define db double
 using namespace std;
 
-class Node{
+class Node
+{
 
-    public:
+public:
     ll data;
     Node *next;
 
     Node(ll x)
     {
-        data=x;
-        next=NULL;
+        data = x;
+        next = NULL;
     }
 };
-class myStack{
+class myStack
+{
 
     Node *head;
     ll size;
 
-    public:
+public:
     myStack()
     {
-        head=NULL;
-        size=0;
+        head = NULL;
+        size = 0;
     }
     void push(ll x)
     {
-        Node *temp=new Node(x);
-        temp->next=head;
-        head=temp;
+        Node *temp = new Node(x);
+        temp->next = head;
+        head = temp;
         size++;
     }
 
     ll pop()
     {
-        if(head==NULL)
+        if (head == NULL)
         {
             return INT_MIN;
         }
 
-        Node *temp=head;
-        ll data=temp->data;
-        head=head->next;
+        Node *temp = head;
+        ll data = temp->data;
+        head = head->next;
         size--;
         delete temp;
         return data;
@@ -51,7 +53,7 @@ class myStack{
 
     ll peek()
     {
-        if(head==NULL)
+        if (head == NULL)
         {
             return INT_MIN;
         }
@@ -59,23 +61,33 @@ class myStack{
         return head->data;
     }
 
-    bool isEmpty(){
-        return head==NULL;
+    bool isEmpty()
+    {
+        return head == NULL;
     }
 
     ll stackSize()
     {
         return size;
     }
+
+    ~myStack()
+    {
+        while (head != NULL)
+        {
+            Node *temp = head;
+            head = head->next;
+            delete temp;
+        }
+        size = 0;
+    }
 };
-int main(){
-
-    // CPP stack's behaviour on peek and pop on empty stack is undefined.
-
+int main()
+{
     myStack s;
 
-    cout<<s.pop()<<endl;
-    cout<<s.peek()<<endl;
+    cout << s.pop() << endl;
+    cout << s.peek() << endl;
 
     s.push(10);
     s.push(20);
@@ -84,9 +96,9 @@ int main(){
     s.push(50);
     s.push(60);
 
-    cout<<s.peek()<<endl;
-    cout<<s.stackSize()<<endl;
-    cout<<s.isEmpty()<<endl;
+    cout << s.peek() << endl;
+    cout << s.stackSize() << endl;
+    cout << s.isEmpty() << endl;
 
     return 0;
 }
