@@ -37,14 +37,16 @@ void stockSpanNaive(vector<ll> &prices)
  * 
  * 1) If there is greater element on the left side of the current element then the span is (Index of current element-Index of closest greater element on left side).
  * 
- * 2) Other the span is index of current element + 1.
+ * 2) Otherwise the span is index of current element + 1.
  * 
  * 3) To find the element greater than the current element we need all the elements which were greater than the previous element and we need them in LIFO order.
  * 
  * To better understand the solution watch the video : 'Stock span problem'
  * 
- * Time complexity : O(n)       // Since every element is push and pop only once hence at max the only 2n stack operations are performed hence the time complexity is O(n)
+ * Time complexity : O(n)       // Since every element is push and pop only once hence at max the only 2n stack operations are performed hence the time complexity is O(n).
+ * 
  * Auxillary space : O(n)      // Since at max only n elements can be present in the stack and that is when the elements are in decreasing order.
+ * 
  * @param stock 
  */
 void stockSpanEfficient(vector <ll> &stock)

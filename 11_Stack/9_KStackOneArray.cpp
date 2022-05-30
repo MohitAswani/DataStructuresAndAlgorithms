@@ -5,11 +5,11 @@ using namespace std;
 /**
  * @brief
  *
- * Naive approach : A naive approach to this problem is to divide the array in k parts. But the issue with this approach is the our stack size is limited and we wont be able to use available provided by other empty stacks.
+ * Naive approach : A naive approach to this problem is to divide the array in k parts. But the issue with this approach is that our stack size is limited and we wont be able to use available provided by other empty stacks.
  *
  * Efficient approach : * To do this efficient we use two extra arrays : top and next.
  * Top array stores the position at which the top element of any stack is present.
- * Also we want to use the space efficient and not waste any space if its available to do that we use an array called which stores the next element of the stack and hence we don't need to store the elements in consecutive blocks we can just use next array to refer to the next element.
+ * Also we want to use the space efficient and not waste any space if its available to do that we use an array called next which stores the next element of the stack and hence we don't need to store the elements in consecutive blocks we can just use next array to refer to the next element.
  * Next array server two purposes : it tells us the next slot , it tells us about the next free slot.
  * Also we have a element called freeTop which gives us the top of free stack.
  *

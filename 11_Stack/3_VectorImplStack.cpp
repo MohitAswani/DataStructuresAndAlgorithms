@@ -6,7 +6,7 @@ using namespace std;
 /**
  * @brief The following is an vector implementation of stack ds and it is dynamically sized.
  *
- * The time complexity of push and pop on average is O(1).
+ * The time complexity of push and pop on average is O(1) ( Since the insertion on vector has a worst case time complexity of O(n)).
  *
  */
 class myStack
