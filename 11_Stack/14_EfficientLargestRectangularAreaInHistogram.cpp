@@ -31,7 +31,7 @@ void largestAreaInHistogramEfficient(vector<ll> &arr)
             ll tp = stk.top();
             stk.pop();
             // considering tp as the smallest element in the rectangle.
-            ll curr = arr[tp] * (stk.empty() ? i : (i - stk.top() - 1));  
+            ll curr = arr[tp] * (stk.empty() ? i : (i - stk.top() - 1));  // now s.top() is the previous small
             res = max(res, curr);
         }
         stk.push(i);

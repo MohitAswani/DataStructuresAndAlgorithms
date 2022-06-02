@@ -96,7 +96,7 @@ public:
     ll pop()
     {
         ll t = s.top();
-        if (t < 0)
+        if (t <= min)
         {
             ll res = min;
             min = 2*min - t;
@@ -114,7 +114,7 @@ public:
 
     ll top()
     {
-        return (s.top()>0)?s.top():min;
+        return (s.top()<=min)?min:s.top();
     }
 };
 int main()

@@ -2,6 +2,10 @@
 #define ll long long
 #define db double
 using namespace std;
+/**
+ * @brief In the below implementation we maitain the two ends of the array as the heads of stacks and push the elements likewise.
+ *  
+ */
 class TwoStacks{
     ll *arr;
     ll cap;

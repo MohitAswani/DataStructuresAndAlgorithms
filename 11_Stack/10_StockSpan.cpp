@@ -5,7 +5,7 @@ using namespace std;
 /**
  * @brief In this problem we need to find the span of stocks.
  *
- * The span Si of the stock’s price on a given day i is defined as the maximum number of consecutive days just before the given day, for which the price of the stock on the current day is less than its price on the given day.
+ * The span Si of the stock’s price on a given day i is defined as the maximum number of consecutive days just before the given day, for which the price of the stock is less than the price on the given day.
  *
  * In the naive approach we use two loops to find the solution.
  * 
