@@ -10,7 +10,7 @@
 
 * Binary heap (used to represent priority queue which is extremely useful in many algorithms)
 
-* B and B+ trees in DBMS (usef for indexing)
+* B and B+ trees in DBMS (used for indexing)
 
 * Spanning and shortest path trees in computer networks ( used in bridges and routers)
 
@@ -22,7 +22,7 @@
 
 * Suffix tree (usef to search for patterns in strings)
 
-* Binary index tree (used for range query search / faster for limit set of operations)
+* Binary index tree (used for range query search / faster for limited set of operations)
 
 * Segment tree (used for range query search / more powerful)
 
