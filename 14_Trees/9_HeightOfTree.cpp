@@ -18,7 +18,7 @@ class Node
     }
 };
 /**
- * @brief We just traverse the left and right subtree and add 1 to its height.
+ * @brief We just traverse the left and right subtree and add 1 to the maximum of their heights.
  * 
  * Time complexity : O(n)
  * Auxillary space : O(h) (h+1 to be exact)

@@ -21,7 +21,7 @@ int maxLevel = 0;
 /**
  * @brief In the recursive solution of this solution we have a variable level which denotes the current level and if its value is greater than the maxLevel then we encounter the level for the first time and hence the first node we encounter is the leftmost node.
  * 
- * We set the maxLevel to 0 as we want print the root
+ * We set the maxLevel to 0 initially as we want to print the root.
  * 
  * Time complexity : Theta(n)      // Preorder traversal
  * Auxillary space : Theta(h)

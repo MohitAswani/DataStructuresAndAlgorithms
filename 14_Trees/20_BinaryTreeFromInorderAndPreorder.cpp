@@ -16,30 +16,21 @@ public:
         right = NULL;
     }
 };
-template <typename T>
-std::vector<T> myslice(std::vector<T> const &v, int m, int n)
-{
-    auto first = v.cbegin() + m;
-    auto last = v.cbegin() + n + 1;
-
-    std::vector<T> vec(first, last);
-    return vec;
-}
 /**
  * @brief In this question we are given the inorder and preorder traversal and we need to find the tree from it.
  *
  * Also to contrust a binary tree we need a inorder traversal so we can construct the tree using inorder and preorder or inorder and postorder.
  *
  * To solve this problem we use the preorder to find the root of the current tree/subtree which is the pre[0].
- * 
+ *
  * Then we find the index of pre[0] in in array and all the elements from start upto pre[0] represent the left subtree and all the elements from pre[0]+1 to end represents the right subtree.
- * 
+ *
  * And then we call the function recursively.
- * 
+ *
  * Time complexity : O(N^2) (preorder traversal with linear search) (we can use hashing to make it O(N))
  * Auxillary space : O(h)   (since preorder traversal)
- * 
- * 
+ *
+ *
  * @param in
  * @param pre
  * @return Node*

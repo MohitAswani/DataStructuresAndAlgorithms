@@ -68,7 +68,7 @@ void LevelOrderLine(Node *root)
 /**
  * @brief In this solution we have two loop outer loop makes sure that queue is not empty and gives us the size of the current level.
  * 
- * Inner loop print only the current level.
+ * Inner loops print only the current level.
  * 
  * Time complexity : O(n) 
  * Auxillary space : O(width)/O(n) 

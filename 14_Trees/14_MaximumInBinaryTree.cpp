@@ -24,7 +24,7 @@ public:
  * 
  * Can also be solved using level order traversal. But then the time complexity is O(n) and auxillary space is O(w).
  * 
- * So for a skewed tree (with more height and less width) iterative solution is better and for a perfect tree (with almost all the node) recursive is better.
+ * So for a skewed tree (with more height and less width) iterative solution is better and for a perfect/balanced tree (with almost all the node) recursive is better.
  *
  * @param root
  * @return int
