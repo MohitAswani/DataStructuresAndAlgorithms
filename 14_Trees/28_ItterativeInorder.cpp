@@ -1,55 +1,60 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #define ll long long
 #define db double
 using namespace std;
 class Node
 {
-    public:
-
+public:
     int key;
     Node *left;
     Node *right;
 
     Node(int k)
     {
-        key=k;
-        left=NULL;
-        right=NULL;
+        key = k;
+        left = NULL;
+        right = NULL;
     }
 };
+
+/**
+ * @brief In this solution we keep on pushing the left node till it becomes null then we print the left node first and then visit its right node.
+ * 
+ * Also we need the last visited item in the Last in first out order hence we use a stack.
+ * 
+ * Time complexity: O(n) (Pushes every node once and pops every node once)
+ * Auxillary space: O(h)
+ * @param root 
+ */
 void Inorder(Node *root)
 {
-    stack <Node *> s;
+    stack<Node *> s;
+    Node *curr = root;
 
-    s.push(root);
-
-    while(!s.empty())
+    while (curr != NULL || s.empty() == false)
     {
-        while(s.top()->left!=NULL)
+        while (curr != NULL) // for the items on the left side.
         {
-            s.push(s.top()->left);
+            s.push(curr);
+            curr = curr->left;
         }
 
-        Node *curr=s.top();
+        curr = s.top();
         s.pop();
-        cout<<curr->key<<" ";
 
-        if(curr->right!=NULL)
-        {
-            s.push(curr->right);
-        }
+        cout << curr->key << " "; // for printing the current node
+
+        curr = curr->right; // for the items on the right side.
     }
-
-    cout<<endl;
 }
-int main(){
-    Node *root=new Node(10);
-    root->left=new Node(20);
-    root->right=new Node(30);
-    root->left->left=new Node(40);
-    root->left->right=new Node(50);
-    root->right->left=new Node(60);
-    root->right->right=new Node(70);
+
+int main()
+{
+    Node *root = new Node(10);
+    root->left = new Node(20);
+    root->right = new Node(30);
+    root->left->left = new Node(40);
+    root->left->right = new Node(50);
 
     Inorder(root);
 
