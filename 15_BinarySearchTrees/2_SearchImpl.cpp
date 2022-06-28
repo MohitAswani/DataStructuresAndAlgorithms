@@ -81,7 +81,6 @@ int main()
     root->right = new Node(20);
     root->right->left = new Node(18);
     root->right->right = new Node(80);
-    root->right->left->left = new Node(18);
 
     cout<<SearchRecursive(root, 80)<<endl;
     cout<<SearchItterative(root, 80)<<endl;
