@@ -19,7 +19,7 @@ public:
 /**
  * @brief In this question we are given the inorder and preorder traversal and we need to find the tree from it.
  *
- * Also to contrust a binary tree we need a inorder traversal so we can construct the tree using inorder and preorder or inorder and postorder.
+ * Also to contruct a binary tree we need a inorder traversal so we can construct the tree using inorder and preorder or inorder and postorder.
  *
  * To solve this problem we use the preorder to find the root of the current tree/subtree which is the pre[0].
  *

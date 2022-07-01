@@ -34,7 +34,7 @@
 
 * Need to return boolean for key with the root of a BST given.
 
-* We compare the value to be search with the value of the node and move left or right accordingly.
+* We compare the value to be searched with the value of the node and move left or right accordingly.
 
 * If we hit a null node, then we return false.
 
@@ -48,7 +48,7 @@
 
 ## Delete in BST:
 
-* When we delete a key from the BST we need to make sure that the rest of the BST still follows the property of the respective.
+* When we delete a key from the BST we need to make sure that the rest of the BST still follows the properties of a BST.
 
 * There are three cases of deletion:
     1) If the node is a leaf node.
@@ -59,11 +59,11 @@
 
 * If the node has only one child, we replace the node with its child.
 
-* If the node has two children, we find the closest greatest value or the closest smallest value and replace it will that.
+* If the node has two children, we find the closest greatest value or the closest smallest value and replace it with that.
 
-* Closest greatest value is the inorder successor since it appear next in the inorder traversal (inorder traversal of a BST is sorted ).
+* Closest greatest value is the inorder successor since it appear next in the inorder traversal (inorder traversal of a BST is sorted ). And the inorder successor is the left most child of the right child.
 
-* Closest smallest value is the inorder predecessor since it appear next in the inorder traversal.
+* Closest smallest value is the inorder predecessor since it appear next in the inorder traversal. And the inorder predecessor is the right most child of the left child.
 
 * If key doesn't exist in the BST we do not delete it.
 
@@ -119,4 +119,4 @@
 
 * AVL is very strict about the balance in the tree. 
 
-* Red-black tree is not strict about the balance. In generally this is used more.
+* Red-black tree is not strict about the balance. In generally red black tree is used more.

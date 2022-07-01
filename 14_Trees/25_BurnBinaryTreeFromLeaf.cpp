@@ -19,7 +19,7 @@ public:
 /**
  * @brief In this problem we need to find the amount of time it will require to burn the binary tree if we start burning from a given leaf.
  *
- * Basically this question can be seen as find the farthest from the given leaf.
+ * Basically this question can be seen as find the farthest node from the given leaf.
  *
  * We assume that we are always given a leaf node.
  * 
