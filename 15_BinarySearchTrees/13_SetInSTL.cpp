@@ -117,7 +117,7 @@ int main()
 
     // If the given element is greater than the largest then it returns s.end().
 
-    auto it3 = s.lower_bound(25);
+    auto it3 = s.upper_bound(25);
 
     if (it3 != s.end())
         cout << *it3 << endl;

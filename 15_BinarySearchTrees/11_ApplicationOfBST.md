@@ -2,7 +2,7 @@
 
 * To maintain sorted stream of data (or sorted set of data). 
 
-* We can sort an array using self-balancing BST by just inserting the elemenets into it. But it is not prefered to use self-balancing BST for sorting as constants are higher and also it will require O(n) extra space.
+* We can sort an array using self-balancing BST by just inserting the elements into it. But it is not prefered to use self-balancing BST for sorting as constants are higher and also it will require O(n) extra space.
 
 * To implement doubly ended priority queue. It can do max and min in O(1) and insert and delete in O(logn).
 

@@ -38,7 +38,7 @@ Node *getSuccessor(Node *curr)
  * @brief Will delete the key element based on the three of cases of delete.
  *
  * Time complexity : O(h)
- * Auxillary space : O(1)
+ * Auxillary space : O(h)
  *
  * @param root
  * @param key

@@ -8,7 +8,7 @@
 
 * Itterators : ![](2022-07-02-09-41-14.png)
 
-* Operations (find,count,lower_bound,upper_bound are search functions) : ![](2022-07-02-09-41-38.png).
+* Operations (find,count,lower_bound,upper_bound are search functions) : ![](2022-07-02-09-41-38.png)
 
 * Erase with itterators : ![](2022-07-02-09-43-08.png)
 

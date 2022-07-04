@@ -71,7 +71,7 @@ Node *leftRotate(Node *x)
  * @brief Perform the normal BST insertion.
  * The current node must be one of the ancestors of the newly inserted node. Update the height of the current node.
  * Get the balance factor (left subtree height – right subtree height) of the current node.
- *If balance factor is greater than 1, then the current node is unbalanced and we are either in Left Left case or left Right case. To check whether it is left left case or not, compare the newly inserted key with the key in left subtree root.
+ * If balance factor is greater than 1, then the current node is unbalanced and we are either in Left Left case or left Right case. To check whether it is left left case or not, compare the newly inserted key with the key in left subtree root.
  * If balance factor is less than -1, then the current node is unbalanced and we are either in Right Right case or Right-Left case. To check whether it is Right Right case or not, compare the newly inserted key with the key in right subtree root.
  *
  * Time complexity : O(logn)
@@ -142,6 +142,22 @@ Node *getSuccessor(Node *curr)
     return curr;
 }
 
+/**
+ * @brief
+ *
+ * Perform the normal BST deletion.
+ * The current node must be one of the ancestors of the deleted node. Update the height of the current node.
+ * Get the balance factor (left subtree height – right subtree height) of the current node.
+ * If balance factor is greater than 1, then the current node is unbalanced and we are either in Left Left case or Left Right case. To check whether it is Left Left case or Left Right case, get the balance factor of left subtree. If balance factor of the left subtree is greater than or equal to 0, then it is Left Left case, else Left Right case.
+ * If balance factor is less than -1, then the current node is unbalanced and we are either in Right Right case or Right Left case. To check whether it is Right Right case or Right Left case, get the balance factor of right subtree. If the balance factor of the right subtree is smaller than or equal to 0, then it is Right Right case, else Right Left case.
+ *
+ * Time complexity : O(logn)
+ * Auxillary space : O(logn)
+ *
+ * @param root
+ * @param key
+ * @return Node*
+ */
 Node *deleteNode(Node *root, ll key)
 {
 

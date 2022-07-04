@@ -44,7 +44,6 @@ Node *Insert(Node *root, int x)
  * Time complexity : O(k)
  * Auxillary space : O(n)
  *
- *
  * Efficeint:  To find the kthSmallestElement using a BST we make the use of count of elements on the left of current node.
  *
  * So if lcount+1 if equal to k then that means that current element is the answer.

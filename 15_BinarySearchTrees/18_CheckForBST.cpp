@@ -40,16 +40,10 @@ Node *Insert(Node *root, int x)
  *
  * Time complexity : O(n^2)
  *
- *
  * Efficeint : For every node we pass a range as input and check that the node lies in that range else return false.
  *
  * Time complexity : O(n)
  * Auxillary space : O(n)
- *
- * Efficeint : Inorder traversal of a BST should be sorted.
- *
- * Time complexity : O(n)
- * Auxillary space : O(h)
  *
  * @param root
  * @param min
