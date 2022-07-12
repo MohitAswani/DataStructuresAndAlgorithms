@@ -72,55 +72,60 @@ public:
 
     void heapify(int i)
     {
-        int smallest=i;
+        int smallest = i;
 
         if (left(i) != -1 && arr[left(i)] < arr[smallest])
         {
-            smallest=left(i);
+            smallest = left(i);
         }
 
         if (right(i) != -1 && arr[right(i)] < arr[smallest])
         {
-            smallest=right(i);
+            smallest = right(i);
         }
 
-        if(smallest!=i)
+        if (smallest != i)
         {
-            swap(arr[i],arr[smallest]);
+            swap(arr[i], arr[smallest]);
             return heapify(smallest);
         }
     }
 
     ll extractMin()
     {
-        if(size==0)
-        return INT_MAX;
-        if(size==1)
+        if (size == 0)
+            return INT_MAX;
+        if (size == 1)
         {
             size--;
             return arr[0];
         }
 
-        swap(arr[0],arr[size-1]);
+        swap(arr[0], arr[size - 1]);
         size--;
         heapify(0);
         return arr[size];
     }
 
-    void decreaseKey(int i,int x)
+    void decreaseKey(int i, int x)
     {
-        arr[i]=x;
+        arr[i] = x;
 
-        while(i!=0&&arr[parent(i)]>arr[i])
+        while (i != 0 && arr[parent(i)] > arr[i])
         {
-            swap(arr[parent(i)],arr[i]);
-            i=parent(i);
+            swap(arr[parent(i)], arr[i]);
+            i = parent(i);
         }
     }
 
+    /**
+     * @brief To delete the key at a given index we swap the key with the last element and decrease the size and call heapify on the given index.
+     * 
+     * @param i 
+     */
     void deleteKey(int i)
     {
-        swap(arr[i],arr[size-1]);
+        swap(arr[i], arr[size - 1]);
         size--;
 
         heapify(i);

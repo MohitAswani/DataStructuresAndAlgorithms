@@ -18,7 +18,7 @@ public:
 
     int left(int i)
     {
-        if ((2 * i + 1) <= size)
+        if ((2 * i + 1) < size)
         {
             return 2 * i + 1;
         }
@@ -28,7 +28,7 @@ public:
 
     int right(int i)
     {
-        if ((2 * i + 2) <= size)
+        if ((2 * i + 2) < size)
         {
             return 2 * i + 2;
         }
@@ -38,7 +38,7 @@ public:
 
     int parent(int i)
     {
-        if ((i - 1) / 2 <= size)
+        if ((i - 1) / 2 < size)
         {
             return (i - 1) / 2;
         }
@@ -72,44 +72,44 @@ public:
 
     void heapify(int i)
     {
-        int smallest=i;
+        int smallest = i;
 
         if (left(i) != -1 && arr[left(i)] < arr[smallest])
         {
-            smallest=left(i);
+            smallest = left(i);
         }
 
         if (right(i) != -1 && arr[right(i)] < arr[smallest])
         {
-            smallest=right(i);
+            smallest = right(i);
         }
 
-        if(smallest!=i)
+        if (smallest != i)
         {
-            swap(arr[i],arr[smallest]);
+            swap(arr[i], arr[smallest]);
             return heapify(smallest);
         }
     }
 
     /**
      * @brief We swap root with the last element and then decrease the size by 1 and call heapify on root.
-     * 
+     *
      * Time complexity : O(h)  (h=log(n))
      * Auxillary space : O(h)
-     * 
-     * @return ll 
+     *
+     * @return ll
      */
     ll extractMin()
     {
-        if(size==0)
-        return INT_MAX;
-        if(size==1)
+        if (size == 0)
+            return INT_MAX;
+        if (size == 1)
         {
             size--;
             return arr[0];
         }
 
-        swap(arr[0],arr[size-1]);
+        swap(arr[0], arr[size - 1]);
         size--;
         heapify(0);
         return arr[size];

@@ -18,7 +18,7 @@ public:
 
     int left(int i)
     {
-        if ((2 * i + 1) <= size)
+        if ((2 * i + 1) < size)
         {
             return 2 * i + 1;
         }
@@ -28,7 +28,7 @@ public:
 
     int right(int i)
     {
-        if ((2 * i + 2) <= size)
+        if ((2 * i + 2) < size)
         {
             return 2 * i + 2;
         }
@@ -38,7 +38,7 @@ public:
 
     int parent(int i)
     {
-        if ((i - 1) / 2 <= size)
+        if ((i - 1) / 2 < size)
         {
             return (i - 1) / 2;
         }
@@ -72,36 +72,36 @@ public:
 
     void heapify(int i)
     {
-        int smallest=i;
+        int smallest = i;
 
         if (left(i) != -1 && arr[left(i)] < arr[smallest])
         {
-            smallest=left(i);
+            smallest = left(i);
         }
 
         if (right(i) != -1 && arr[right(i)] < arr[smallest])
         {
-            smallest=right(i);
+            smallest = right(i);
         }
 
-        if(smallest!=i)
+        if (smallest != i)
         {
-            swap(arr[i],arr[smallest]);
+            swap(arr[i], arr[smallest]);
             return heapify(smallest);
         }
     }
 
     ll extractMin()
     {
-        if(size==0)
-        return INT_MAX;
-        if(size==1)
+        if (size == 0)
+            return INT_MAX;
+        if (size == 1)
         {
             size--;
             return arr[0];
         }
 
-        swap(arr[0],arr[size-1]);
+        swap(arr[0], arr[size - 1]);
         size--;
         heapify(0);
         return arr[size];
@@ -109,21 +109,21 @@ public:
 
     /**
      * @brief We keep on comparing the changed value with its parent and keep on repeating this operation till we reach parent or parent becomes smaller.
-     * 
+     *
      * Time complexity : O(h)  (h=log(n))
      * Auxillary space : O(h)
-     * 
-     * @param i 
-     * @param x 
+     *
+     * @param i
+     * @param x
      */
-    void decreaseKey(int i,int x)
+    void decreaseKey(int i, int x)
     {
-        arr[i]=x;
+        arr[i] = x;
 
-        while(i!=0&&arr[parent(i)]>arr[i])
+        while (i != 0 && arr[parent(i)] > arr[i])
         {
-            swap(arr[parent(i)],arr[i]);
-            i=parent(i);
+            swap(arr[parent(i)], arr[i]);
+            i = parent(i);
         }
     }
 };
@@ -142,7 +142,7 @@ int main()
 
     mh.print();
 
-    mh.decreaseKey(3,2);
+    mh.decreaseKey(3, 2);
 
     mh.print();
 

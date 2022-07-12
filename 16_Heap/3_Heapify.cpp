@@ -18,7 +18,7 @@ public:
 
     int left(int i)
     {
-        if ((2 * i + 1) <= size)
+        if ((2 * i + 1) < size)
         {
             return 2 * i + 1;
         }
@@ -28,7 +28,7 @@ public:
 
     int right(int i)
     {
-        if ((2 * i + 2) <= size)
+        if ((2 * i + 2) < size)
         {
             return 2 * i + 2;
         }
@@ -38,7 +38,7 @@ public:
 
     int parent(int i)
     {
-        if ((i - 1) / 2 <= size)
+        if ((i - 1) / 2 < size)
         {
             return (i - 1) / 2;
         }
@@ -74,27 +74,27 @@ public:
      * @brief Given a binary heap and a index with possible violation, we need to fix the heap.
      *
      * We find the smallest out of i,left(i),right(i) and if smallest !=i then we swap smallest with i and perform heapify on smallest.
-     * 
+     *
      * Time complexity : O(h)  (h=log(n))
      * Auxillary space : O(h)
      */
     void heapify(int i)
     {
-        int smallest=i;
+        int smallest = i;
 
         if (left(i) != -1 && arr[left(i)] < arr[smallest])
         {
-            smallest=left(i);
+            smallest = left(i);
         }
 
         if (right(i) != -1 && arr[right(i)] < arr[smallest])
         {
-            smallest=right(i);
+            smallest = right(i);
         }
 
-        if(smallest!=i)
+        if (smallest != i)
         {
-            swap(arr[i],arr[smallest]);
+            swap(arr[i], arr[smallest]);
             return heapify(smallest);
         }
     }
@@ -112,7 +112,7 @@ int main()
     mh.insert(25);
     mh.insert(45);
 
-    mh.arr[0]=120;  // Adding error to the heap
+    mh.arr[0] = 120; // Adding error to the heap
 
     mh.print();
 
