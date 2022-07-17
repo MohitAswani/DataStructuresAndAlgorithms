@@ -5,10 +5,17 @@ void addEdge(vector <int> adj[],int u,int v)
     adj[u].push_back(v);
     adj[v].push_back(u);
 }
+
 /**
- * A undirected graph contains cycle if a adjacent node is visited again and it not parent of current selected node.
+ * @brief  A undirected graph contains cycle if a adjacent node is visited again and it not parent of current selected node.
  * 
  * In BFS we pass the parent array and check if the adjacent is the parent or not.
+ * 
+ * Time complexity : O(V+E)
+ * Auxillary space : O(V)
+ * 
+ * @param adj 
+ * @param V 
  */
 void printGraph(vector <int> adj[],int V)
 {
@@ -20,7 +27,7 @@ void printGraph(vector <int> adj[],int V)
         cout<<endl;
     }
 }
-bool BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
+bool BFS_Helper(vector <int> adj[],int s,vector <bool> &visited,vector <int> parent)
 {
     queue <int> q;
     visited[s]=true;
@@ -35,6 +42,10 @@ bool BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
             {
                 q.push(v);
                 visited[v]=1;
+            }
+            else if(v!=parent[u])
+            {
+                return true;
             }
         }
     }

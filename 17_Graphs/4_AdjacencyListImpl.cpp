@@ -1,27 +1,31 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-void addEdge(vector <int> adj[],int u,int v)   // For undirected graph
+void addEdge(vector<int> adj[], int u, int v) // For undirected graph
 {
     adj[u].push_back(v);
     adj[v].push_back(u);
 }
-void printGraph(vector <int> adj[],int V)
+void printGraph(vector<int> adj[], int V)
 {
-    for(int i=0;i<V;i++)
+    for (int i = 0; i < V; i++)
     {
-        for(auto x:adj[i])
-        cout<<x<<" ";
+        for (auto x : adj[i])
+            cout << x << " ";
 
-        cout<<endl;
+        cout << endl;
     }
 }
-int main(){
-    int V=4;
-    vector <int> adj[V];  //In this implementation we use array of vectors we can also use vector of vectors to allow flexiblity
-    addEdge(adj,0,1);
-    addEdge(adj,0,2);
-    addEdge(adj,1,2);
-    addEdge(adj,1,3);
-    printGraph(adj,V);
+int main()
+{
+
+    // In this implementation we use array of vectors we can also use vector of vectors to allow flexiblity.
+
+    int V = 4;
+    vector<int> adj[V];
+    addEdge(adj, 0, 1);
+    addEdge(adj, 0, 2);
+    addEdge(adj, 1, 2);
+    addEdge(adj, 1, 3);
+    printGraph(adj, V);
     return 0;
 }

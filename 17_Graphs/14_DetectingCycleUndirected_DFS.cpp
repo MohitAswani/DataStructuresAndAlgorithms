@@ -5,10 +5,21 @@ void addEdge(vector<int> adj[], int u, int v)
     adj[u].push_back(v);
     adj[v].push_back(u);
 }
+
 /**
- * A undirected graph contains cycle if a adjacent node is visited again and it not parent of current selected node.
+ * @brief  A undirected graph contains cycle if a adjacent node is visited again and it not parent of current selected node.
  * 
  * In DFS we pass the parent directly to the recursive call.
+ * 
+ * Time complexity : O(V+E) (this solution is similiar to DFS but the only difference being that we pass a parent variable to prevent the code from considering its parent as already visited node and considering its a cycle)
+ * Auxillary space : O(V)
+ * 
+ * @param adj 
+ * @param s 
+ * @param visited 
+ * @param parent 
+ * @return true 
+ * @return false 
  */
 bool DFS_helper(vector<int> adj[], int s, vector<bool> &visited, int parent)
 {
@@ -38,10 +49,6 @@ bool DFS(vector<int> adj[], int v)
                 return true;
     }
     return false;
-
-    /* Time complexity : O(V+E) this solution is similiar to DFS but the only difference being that we pass a parent 
-    variable to prevent the code from considering its parent as already visited node and considering its a cycle
-    */
 }
 int main()
 {

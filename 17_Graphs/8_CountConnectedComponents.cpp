@@ -34,6 +34,15 @@ void BFS_Helper(vector <int> adj[],int s,vector <bool> &visited)
         }
     }
 }
+/**
+ * @brief To count the number of connected components we see how many time the helper function is called , because once the traversal function is called it will visited the whole component and only the not connected parts will be left.
+ * 
+ * Time complexity : O(V+E)
+ * Auxillary space : O(V)
+ * 
+ * @param adj 
+ * @param v 
+ */
 void BFS_dis(vector <int> adj[],int v)
 {
     int count=0;
@@ -50,7 +59,7 @@ void BFS_dis(vector <int> adj[],int v)
 }
 int main(){
     int V=7;
-    vector <int> adj[V];  //In this implementation we use array of vectors we can also use vector of vectors to allow flexiblity
+    vector <int> adj[V]; 
     addEdge(adj,0,1);
     addEdge(adj,0,2);
     addEdge(adj,1,3);

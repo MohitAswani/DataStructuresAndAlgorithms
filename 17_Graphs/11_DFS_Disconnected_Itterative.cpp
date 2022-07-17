@@ -36,23 +36,29 @@ void DFS_helper(vector<int> adj[], int s, vector<bool> &visited)
         }
     }
 }
+/**
+ * @brief For the iterative solution we use stack for pushing the elements. Also we push the elements in reverse order in the stack .i.e bigger to smaller so that the smaller elements are popped first.
+ * 
+ * Time complexity : O(V+E) (Reason being in the DFS_helper we traverse through all the adjacency list and that will be 2*E in undirected and E in directed. The V is present for the case when all the vertices are disconnected)
+ * 
+ * Auxillary space : O(V)
+ * 
+ * @param adj 
+ * @param v 
+ */
 void DFS(vector<int> adj[], int v)
 {
     vector<bool> visited(v + 1);
     for (int i = 0; i < v; i++)
     {
         if (visited[i] == false)
-            DFS_helper(adj, i, visited); // all the times this call is made is the number of disconnect components in this graph
+            DFS_helper(adj, i, visited); 
     }
-
-    /* Time complexity : O(V+E)  (Reason being in the DFS_helper we traverse through all the adjacency list and that will be 2*E in undirected and E in
-     directed. The V is present for the case when all the vertices are disconnected)
-    */
 }
 int main()
 {
     int V = 4;
-    vector<int> adj[V]; // In this implementation we use array of vectors we can also use vector of vectors to allow flexiblity
+    vector<int> adj[V]; 
     addEdge(adj, 0, 1);
     addEdge(adj, 0, 2);
     addEdge(adj, 1, 2);
