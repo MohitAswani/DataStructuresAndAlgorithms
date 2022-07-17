@@ -108,7 +108,7 @@ public:
     }
 
     /**
-     * @brief We keep on comparing the changed value with its parent and keep on repeating this operation till we reach parent or parent becomes smaller.
+     * @brief We keep on comparing the changed value with its parent and keep on repeating this operation till we reach the root or parent becomes smaller.
      *
      * Time complexity : O(h)  (h=log(n))
      * Auxillary space : O(h)

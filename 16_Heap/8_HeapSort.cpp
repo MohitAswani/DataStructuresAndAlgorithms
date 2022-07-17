@@ -41,7 +41,7 @@ void buildHeap(int arr[], int n)
  * 
  * nlogn is the best time complexity any algorithm can provide including merge (nlogn in worst case) and quick sort (nlogn on average) .
  * 
- * If we compare heap sort with quick and merge sort constant in heap sort are higher and hence in practise it takes more time than quick and merge sort.
+ * If we compare heap sort with quick and merge sort constants in heap sort are higher and hence in practise it takes more time than quick and merge sort.
  * 
  * Heap sort is used in hybrid sorting algo's like intro sort. Intro sort using quick sort , but when the recursion depth of quick sort goes beyond nlogn it switches to heap sort.
  * 

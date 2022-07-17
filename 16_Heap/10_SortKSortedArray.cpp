@@ -8,7 +8,7 @@ using namespace std;
  *
  * Naive : sort the array.
  *
- * Efficient : add first k+1 elements to heap and retrieve min at each traversal and add the next element to the queue and then retrieve the remaining elements.
+ * Efficient : add first k elements to heap and retrieve min at each traversal and add the next element to the queue and then retrieve the remaining elements.
  *
  * Time complexity : O(k+ nlogk+klogk)= O((n+k)logk)
  * Auxillary space : O(k)
