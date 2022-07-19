@@ -16,11 +16,27 @@ void indegree(vector <int> adj[],int V,vector <int> &indegree)
 }
 /**
  * KAHN'S ALGORITHM FOR CYCLE DECTECTION :
+ * ---------------------------------------
  * 
  * In case of a cyclic graph there will be a point when the indegree of some vertices won't be zero and the queue would be empty.
  * 
+ * Also in case of cycle no node can have indegree zero initially so the traversal won't even start.
+ * 
  * This is because dependencies are circularly dependent on each other so there is no way to execute anyone of them.
+ * 
  */ 
+
+/**
+ * @brief If the queue becomes empty but we haven't traversed all the nodes then there is a cycle.
+ * 
+ * Time complexity : O(V+E) since thats the complexity of Kahn's algorithm
+ * Auxillary space : O(V)
+ * 
+ * @param adj 
+ * @param V 
+ * @return true 
+ * @return false 
+ */
 bool cycleDetection(vector <int> adj[],int V)
 {
     vector <int> indegreeVector(V+1);
@@ -50,7 +66,6 @@ bool cycleDetection(vector <int> adj[],int V)
     }
     
     return (count!=V);
-    // Time complexity : O(V+E) since thats the complexity of Kahn's algorithm
 }
 int main(){
     int V=5;

@@ -16,4 +16,4 @@
 
 **Broadcasting**: systems broadcast to their neighbours which in turn broadcast to their neighbours.
 
-(There are many more applications of BPS and many algorithms based on BFS).
+(There are many more applications of BFS and many algorithms based on BFS).

@@ -15,14 +15,17 @@ void indegree(vector <int> adj[],int V,vector <int> &indegree)
     }
 }
 /**
+ * 
  * KAHN'S BFS BASED ALGORITHM :
  * -------------------
- * Topological sort : in this problem we consider the vertices as jobs and edges as dependencies and we sort the jobs 
-                    according to the dependencies and print the onces with least dependencies first. 
-
-                    In topological sort we need to print the finishing order of the job. That is dependent jobes should 
-                    come later and the jobs on which they are dependent come first.
-                    
+ * Topological sort : in this problem we consider the vertices as jobs and edges as dependencies and we sort the jobs according to the dependencies and print the onces with least dependencies first. 
+ *
+ * In topological sort we need to print the finishing order of the job so basically if all the nodes were to start then we need to find the order in which they would start if initial only independent nodes started. 
+ * 
+ * That is dependent jobes should come later and the jobs on which they are dependent come first.
+ *
+ * ALGORITHM
+ * --------- 
  * Store the indegree of every vertex
  * Create a queue q
  * Add all 0 indegree vertices to the q
@@ -35,13 +38,25 @@ void indegree(vector <int> adj[],int V,vector <int> &indegree)
  *          ii) If indegree of v = 0 add v to the queue
  * }
  */ 
+
+/**
+ * @brief We first find the indegree for each vertice and then add all the vertice will 0 indegree and do bfs and keep on pushing the nodes which currently have 0 indegree.
+ * 
+ * Time complexity : O(V+E) since its almost similiar to BFS other than the visited array which is replaced by indegree here. 
+ * Auxillary space : O(V)
+ * 
+ * @param adj 
+ * @param V 
+ */
 void topologicalSort(vector <int> adj[],int V)
 {
 
-    // Topological sort is only for acyclic graph and if there is cycle of dependencies we cannot find its topological sort
+    // TOPOLOGICAL SORT IS ONLY FOR ACYCLIC GRAPH AND IF THERE IS CYCLE OF DEPENDENCIES WE CANNOT FIND ITS TOPOLOGICAL SORT
+
     
     vector <int> indegreeVector(V+1);
-    indegree(adj,V,indegreeVector);
+    indegree(adj,V,indegreeVector);   // O(V+E)
+
     queue <int> q;
     for(int i=0;i<V;i++)
     {
@@ -65,7 +80,6 @@ void topologicalSort(vector <int> adj[],int V)
         }
     }
 
-    // Time complexity : O(V+E) since its almost similiar to BFS other than the visited array which is replaced by indegree here. 
 }
 int main(){
     int V=5;

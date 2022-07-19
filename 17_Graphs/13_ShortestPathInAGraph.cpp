@@ -57,7 +57,7 @@ void BFS(vector<int> adj[], int v, int s)
 int main()
 {
     int V = 4;
-    vector<int> adj[V]; // In this implementation we use array of vectors we can also use vector of vectors to allow flexiblity
+    vector<int> adj[V]; 
     addEdge(adj, 0, 1);
     addEdge(adj, 0, 2);
     addEdge(adj, 1, 2);

@@ -47,7 +47,7 @@ void BFS_dis(vector <int> adj[],int v)
 {
     int count=0;
     vector <bool> visited(v+1,false);
-    for(int i=0;i<v;i++)
+    for(int i=0;i<=v;i++)
     {
         if(visited[i]==false)   //this part count the connect component of a graph
         {

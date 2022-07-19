@@ -74,7 +74,7 @@ void BFS(vector<int> adj[], int v)
     // THIS IS THE CASE WHEN THE GRAPH IS NOT CONNECTED AND SOURCE IS NOT GIVEN.
 
     vector<bool> visited(v + 1, false);
-    for (int i = 0; i < v; i++)
+    for (int i = 0; i <= v; i++)
     {
         if (visited[i] == false)
         {

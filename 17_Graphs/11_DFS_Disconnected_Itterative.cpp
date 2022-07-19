@@ -49,7 +49,7 @@ void DFS_helper(vector<int> adj[], int s, vector<bool> &visited)
 void DFS(vector<int> adj[], int v)
 {
     vector<bool> visited(v + 1);
-    for (int i = 0; i < v; i++)
+    for (int i = 0; i <= v; i++)
     {
         if (visited[i] == false)
             DFS_helper(adj, i, visited); 
