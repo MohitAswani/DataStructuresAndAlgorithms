@@ -42,6 +42,7 @@ bool BFS_Helper(vector <int> adj[],int s,vector <bool> &visited,vector <int> par
             {
                 q.push(v);
                 visited[v]=1;
+                parent[v]=u;
             }
             else if(v!=parent[u])
             {
