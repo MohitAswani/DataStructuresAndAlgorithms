@@ -40,7 +40,7 @@ void indegree(vector <int> adj[],int V,vector <int> &indegree)
  */ 
 
 /**
- * @brief We first find the indegree for each vertice and then add all the vertice will 0 indegree and do bfs and keep on pushing the nodes which currently have 0 indegree.
+ * @brief We first find the indegree for each vertice and then add all the vertices with 0 indegree and do bfs and keep on pushing the nodes which currently have 0 indegree.
  * 
  * Time complexity : O(V+E) since its almost similiar to BFS other than the visited array which is replaced by indegree here. 
  * Auxillary space : O(V)
