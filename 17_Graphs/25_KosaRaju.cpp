@@ -4,14 +4,15 @@ void addEdge(vector<int> adj[], int u, int v)
 {
     adj[u].push_back(v);
 }
+
 /**
-
-
- *
- *
- *
+ * @brief The following function will give us the nodes in the order of the finishing time which is start time - finish time.
+ * 
+ * @param adj 
+ * @param s 
+ * @param visited 
+ * @param stck 
  */
-
 void DFS_helper(vector<int> adj[], int s, vector<bool> &visited, stack<int> &stck)
 {
     visited[s] = true;

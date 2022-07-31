@@ -19,10 +19,8 @@ using namespace std;
  *
  *
  * Fact about dijkstra's algorithm :
-                                     * Does not work if the graph contains negative weight edge.
-                                     * And the shortest path a given vertex might change if we add common weight to all
-                                     vertices.(this due to the fact the number of edges in path might be more even if
-                                     the path if shortest)
+                                     * Does not work if the graph contains NEGATIVE WEIGHT EDGE..
+                                     * And the shortest path a given vertex might change if we add common weight to all vertices.(this due to the fact the number of edges in path might be more even if the path if shortest)
  *
  * In this algorithm we need a data structure which does min key and update key operation quickly and the perfect data structure for that is priority queue/min heap.
  *

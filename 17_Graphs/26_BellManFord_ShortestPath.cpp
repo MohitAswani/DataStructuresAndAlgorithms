@@ -3,9 +3,6 @@
 #define ll long long
 #define inf INT_MAX
 using namespace std;
-/**
- *
- */
 
 /**
  * @brief
@@ -19,13 +16,13 @@ using namespace std;
  * Bellman ford is dynamic programming algorithm and we build the solution in bottom up manner by using the solution for edges length i-1 to find the solution for edge length i.
  *
  * ALGORITHM :
- * We first find the shortest paths of one edge length. Then shortest paths that are of two edge length and so on.
- * We relax all the edges V-1 times.
- * So we repeat the process of relaxation of all the edges V-1 times.
- * In the first itteration we find all the shortest path of edge length 1.
- * In the second itteration we find all the shortest path of edge length 2 or 1.
- * And by this logic we will have the shortest path (having simple edges/no cycles) before or after V-1 itteration.
- * And the reason for iterating this loop V-1 times is because the maximum length of a simple path(no cycles) in a graph having V vertices cannot be more than V-1.
+            * We first find the shortest paths of one edge length. Then shortest paths that are of two edge length and so on.
+            * We relax all the edges V-1 times.
+            * So we repeat the process of relaxation of all the edges V-1 times.
+            * In the first itteration we find all the shortest path of edge length 1.
+            * In the second itteration we find all the shortest path of edge length 2 or 1.
+            * And by this logic we will have the shortest path (having simple edges/no cycles) before or after V-1 itteration.
+            * And the reason for iterating this loop V-1 times is because the maximum length of a simple path(no cycles) in a graph having V vertices cannot be more than V-1.
  *
  *
  * WATCH THE VIDEO FOR MORE DETAILS

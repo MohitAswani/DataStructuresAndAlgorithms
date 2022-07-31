@@ -18,14 +18,9 @@ void addEdge(vector<pair<int, int>> adj[], int u, int v,
  *
  * 1) Initialize distances of all vertices as infinite.
  *
- * 2) Create an empty priority_queue pq.  Every item
-   of pq is a pair (weight, vertex). Weight (or
-   distance) is used  as first item  of pair
-   as first item is by default used to compare
-   two pairs
+ * 2) Create an empty priority_queue pq.  Every item of pq is a pair (weight, vertex). Weight (or distance) is used  as first item  of pair as first item is by default used to compare two pairs
  *
- * 3) Insert source vertex into pq and make its
-   distance as 0.
+ * 3) Insert source vertex into pq and make its distance as 0.
  *
  * 4) While either pq doesn't become empty
     a) Extract minimum distance vertex from pq.
