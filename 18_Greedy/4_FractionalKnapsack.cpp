@@ -5,7 +5,7 @@ using namespace std;
 
 bool myComp(const pair<ll, ll> &a, const pair<ll, ll> &b)
 {
-    return (a.second / a.first) > (b.second / b.first);
+    return (a.second / (db)a.first) > (b.second / (db)b.first);
 }
 
 /**
