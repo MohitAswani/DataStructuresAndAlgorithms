@@ -24,7 +24,7 @@ bool myComp(const pair<ll, ll> &a, const pair<ll, ll> &b)
  *          b) Else add the current activity to the solution.
  *
  *
- * Time complexity : O(nlogn) (O(nlogn +n))
+ * Time complexity : O(nlogn) (O(nlogn+n))
  * Auxillary space : O(1)
  *
  * @param activities

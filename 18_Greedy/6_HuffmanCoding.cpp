@@ -98,7 +98,7 @@ struct compare
 };
 
 /**
- * @brief Create a Huff object
+ * @brief Create a Huff graph using the above logic.
  * 
  * Time complexity : O(nlogn)
  * Auxillary space : O(n)
