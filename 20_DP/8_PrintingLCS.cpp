@@ -5,13 +5,9 @@ using namespace std;
 /**
  * @brief
  *
- * Here we are doing exactly what we did in the previous two solutions , the only difference is that we do it iteratively using tabulation which saves us the auxillary space.
- *
- * dp[i][j] is the LCS of prefix of two strings from 0 to i-1 and 0 to j-1. Also here i and j denoted the length and not the indices.
- *
- * And if s1[i]=s2[j] dp[i][j]=dp[i-1][j-1]+1 else we find the max of dp[i-1][j] and dp[i][j-1].
- *
- * Time complexity : O(n*m) ( Since we traverse the 2D vector once )
+ * To print the LCS we move in the dp matrix and whenever the character match we move diagonally and when they dont we move towards the director with more value.
+ * 
+ * Time complexity : O(n*m)
  * 
  * @param s1 first string
  * @param s2 second string
@@ -47,6 +43,30 @@ int LCS(string s1, string s2)
             }
         }
     }
+
+    string lcs;
+
+    int i=n,j=m;
+
+    while(i>0&&j>0)
+    {
+        if(s1[i-1]==s2[j-1])
+        {
+            lcs=s1[i-1]+lcs;
+            i--;
+            j--;
+        }
+        else if(dp[i-1][j]>dp[i][j-1])
+        {
+            i--;
+        }
+        else
+        {
+            j--;
+        }
+    }
+
+    cout<<lcs<<endl;
 
     return dp[n][m];
 }

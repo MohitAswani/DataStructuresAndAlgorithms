@@ -1,10 +1,10 @@
 # Tabulation
 
-Tabulation is a bottom up approach compared to memoization which is top down approach. 
+* Tabulation is a bottom up approach compared to memoization which is top down approach. 
 
-In tabulation we start from 0,1,2....and to till the value which we need to find. For example in fibonacci series we need to find the value at position n so we go from 0 to n. And we store the values of the dependencies(values which we need for our solution) in a table. 
+* In tabulation we start from 0,1,2....and to till the value which we need to find. For example in fibonacci series we need to find the value at position n so we go from 0 to n. And we store the values of the dependencies(values which we need for our solution) in a table. 
 
-In general we fill the table in such a way that the dependencies are already filled when we are finding the value of the current cell. 
+* In general we fill the table in such a way that the dependencies are already filled when we are finding the value of the current cell. 
 
 # Comparision between memoization and tabulation
 
