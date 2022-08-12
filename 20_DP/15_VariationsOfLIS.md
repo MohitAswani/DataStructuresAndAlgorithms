@@ -12,3 +12,17 @@
     * We can find lds by doing lis for the reversed vector.
 
     * This problem can be solved using dp in O(n^2) and bs in O(nlogn).
+
+4) Building bridges : in this problem we will be pair of number which represent the bridges connecting two cities and we need to find the maximum number of bridges we can make so that there is no crossing.
+
+    * To solve this problem we sort the array according to the first value of pair and if the first value is same we then sort it according to the second value.
+
+    * After sorting we find the LIS of the sorted array corresponding to second values.
+
+5) Longest chain of pairs : in this problem we are given an array of pair and we need to select a group of pair such that for all adjacent pairs (a,b) and (c,d) b < c (no collision).
+
+    * To solve this problem we sort the array according to the first value.
+
+    * Then we find the LIS of the sorted array.
+
+    * This problem is similiar to the activity selection problem of greedy algorithm in which we found max number of acitivities which can be performed provided only one activity can happen at a time.

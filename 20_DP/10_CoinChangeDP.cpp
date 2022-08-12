@@ -14,7 +14,7 @@ using namespace std;
  * The above array cannot be dp[size+1][sum+1] because we will add the same cases again and again as for in the 2D loop we will go through same sum for every coin which will include the previous cases too hence we will get extra cases.
  *
  * Time complexity is O(sum*size)
- * Auxillary space is O(sum*size) : we opptimise this by using a 2D array of 2 rows.
+ * Auxillary space is O(sum*size) : we can opptimise this by using a 2D array of 2 rows.
  * 
  * @param coins Array containing the values of the coins
  * @param size size of the array
