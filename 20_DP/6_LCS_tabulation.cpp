@@ -9,7 +9,7 @@ using namespace std;
  *
  * dp[i][j] is the LCS of prefix of two strings from 0 to i-1 and 0 to j-1. Also here i and j denoted the length and not the indices.
  *
- * And if s1[i]=s2[j] dp[i][j]=dp[i-1][j-1]+1 else we find the max of dp[i-1][j] and dp[i][j-1].
+ * And if s1[i-1]=s2[j-1] dp[i][j]=dp[i-1][j-1]+1 else we find the max of dp[i-1][j] and dp[i][j-1].
  *
  * Time complexity : O(n*m) ( Since we traverse the 2D vector once )
  * 

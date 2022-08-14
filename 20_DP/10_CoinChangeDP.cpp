@@ -25,7 +25,7 @@ int coinChange(int coins[], int size, int sum)
 {
     int dp[sum + 1][size + 1];
 
-    for (int i = 1; i < sum + 1; i++) // Assigning zero for coins = 0
+    for (int i = 1; i < sum + 1; i++) // Assigning zero for first 0 coins.
     {
         dp[i][0] = 0;
     }
