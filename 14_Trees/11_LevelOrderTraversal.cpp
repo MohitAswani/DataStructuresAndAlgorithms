@@ -21,7 +21,7 @@ public:
  *
  * 1) Find the height of the tree and use the node at distance k function to find all the nodes from 0 to h. (Time complexity : O(n*h))
  *
- * 2) Use queue to perform BF traversal.
+ * 2) Use queue to perform BFS traversal.
  *
  * Time complexity of the below function : Theta(n) (Coz every node is enqueued and dequeued only once)
  * Auxillary space of the below function : O(n)     ( Size of the biggest queue or width of binary tree)(In a perfectly balanced n/2 node in the last/biggest level)

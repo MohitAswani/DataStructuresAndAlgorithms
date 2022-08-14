@@ -17,7 +17,7 @@ using namespace std;
  * If smaller then ignore else remove the top and add the larger element.
  *
  * Print the contents of the heap.
- * 
+ *
  * Time complexity : O(k+(n-k)logk) (Generally k<n)
  *
  * @param arr
@@ -37,15 +37,15 @@ void kLargest(int arr[], int n, int k)
         }
     }
 
-    while(!pq.empty())
+    while (!pq.empty())
     {
-        cout<<pq.top()<<" ";
+        cout << pq.top() << " ";
         pq.pop();
     }
 }
 int main()
 {
-    int arr[] = {5,15,10,20,8,25,18};
+    int arr[] = {5, 15, 10, 20, 8, 25, 18};
     int n = sizeof(arr) / sizeof(int);
 
     kLargest(arr, n, 3);
