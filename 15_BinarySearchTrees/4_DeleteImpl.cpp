@@ -35,7 +35,7 @@ Node *getSuccessor(Node *curr)
     return curr;
 }
 /**
- * @brief Will delete the key element based on the three of cases of delete.
+ * @brief Will delete the key element based on the three cases of delete.
  *
  * Time complexity : O(h)
  * Auxillary space : O(h)
