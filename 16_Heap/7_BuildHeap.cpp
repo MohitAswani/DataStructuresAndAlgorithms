@@ -129,7 +129,7 @@ public:
     /**
      * @brief To convert the given array into a heap we call heapify function for all the nodes from the innermost right node which is the parent of the last left on the right.
      *
-     * To find the innermost right node we do floor(((side-1)-1)/2) which is the parent of the last node.
+     * To find the innermost right node we do floor(((size-1)-1)/2) which is the parent of the last node.
      *
      * Time complexity : O(n) ( This function looks like a O(nlogn) function but if we do some maths we can see that its is an O(n) function. Also max number of nodes at height h is ceil(n/2^(h+1)) )
      * Auxillary space : O(h)

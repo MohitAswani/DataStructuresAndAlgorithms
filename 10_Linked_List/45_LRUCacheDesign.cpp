@@ -7,8 +7,7 @@ using namespace std;
  * Simple implementation : * Using array.
  *                         * Hit and miss both O(n)
  *
- * Efficient implementation : * We need quick insertion and removal operations for this
- *                              data structure so we use hash table.
+ * Efficient implementation : * We need quick insertion and removal operations for this data structure so we use hash table.
  *                            * To maitain the order of recency we used double linked list as hash table is unordered.
  *                            * Also doubly linked list allows us to move an item from the middle to the beginning.
  *                            * Also in our hash map we store the reference to the node of doubly linked list node.
@@ -40,7 +39,7 @@ void traverse(Node *head)
 class Cache
 {
     ll size;
-    unordered_map <ll, Node *> hash_table;
+    unordered_map<ll, Node *> hash_table;
     Node *head;
     Node *tail;
 
@@ -55,41 +54,41 @@ public:
     {
         if (hash_table.find(x) != hash_table.end()) // Present in hash table
         {
-            Node *node=hash_table[x];
+            Node *node = hash_table[x];
 
-            if(node->prev==NULL)      // When it is the first element
+            if (node->prev == NULL) // When it is the first element
             {
-                return ;
+                return;
             }
-            else if(node->next==NULL)  // When it is the last element and not the first element.
+            else if (node->next == NULL) // When it is the last element and not the first element.
             {
-                Node *prev=node->prev;
-                tail=prev;
-                prev->next=NULL;
+                Node *prev = node->prev;
+                tail = prev;
+                prev->next = NULL;
 
-                node->next=head;
-                node->prev=NULL;
+                node->next = head;
+                node->prev = NULL;
 
-                head->prev=node;
-                
-                head=node;
-                return ;
-            } 
-            else               // The node is in the middle.
+                head->prev = node;
+
+                head = node;
+                return;
+            }
+            else // The node is in the middle.
             {
-                Node *next=node->next;
-                Node *prev=node->prev;
+                Node *next = node->next;
+                Node *prev = node->prev;
 
-                next->prev=prev;
-                prev->next=next;
+                next->prev = prev;
+                prev->next = next;
 
-                node->next=head;
-                node->prev=NULL;
+                node->next = head;
+                node->prev = NULL;
 
-                head->prev=node;
-                
-                head=node;
-                return ;
+                head->prev = node;
+
+                head = node;
+                return;
             }
         }
         else
@@ -118,7 +117,7 @@ public:
                 // Insertion at the beginning
 
                 Node *node = new Node(x);
-                hash_table[x]=node;
+                hash_table[x] = node;
 
                 if (head == NULL)
                 {
@@ -136,7 +135,7 @@ public:
                 // Simply insert at the beginning
 
                 Node *node = new Node(x);
-                hash_table[x]=node;
+                hash_table[x] = node;
 
                 if (head == NULL)
                 {
@@ -156,7 +155,7 @@ public:
 int main()
 {
     int a;
-    Cache *c1=new Cache(4);
+    Cache *c1 = new Cache(4);
     c1->Refer(10);
     c1->Refer(20);
     c1->Refer(10);

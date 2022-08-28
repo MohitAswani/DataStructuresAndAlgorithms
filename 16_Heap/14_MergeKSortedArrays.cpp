@@ -3,7 +3,7 @@
 #define db double
 using namespace std;
 /**
- * @brief In this problem we are given k sorted elements and we need to combine them into a sorted array.
+ * @brief In this problem we are given k sorted arrays and we need to combine them into a single sorted array.
  *
  * We use a min heap of size k with every element having 3 fields, {value, pos of array , pos given elemenet in the array}.
  *

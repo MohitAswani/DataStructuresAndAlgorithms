@@ -60,7 +60,7 @@ void swappingData(Node *&head)
 {
     Node *curr = head;
 
-    if (curr != NULL && curr->next != NULL)
+    while (curr != NULL && curr->next != NULL)
     {
         swap(curr->data, curr->next->data);
         curr = curr->next->next;
