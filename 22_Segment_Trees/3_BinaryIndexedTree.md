@@ -61,5 +61,15 @@
 
 * To find the parent of a node for we just need to turn off the last set bit and we can do that by i-(i&(-i)).
 
+## Updating the values :
+
+* ![](2022-09-02-13-26-39.png)
+
+* ![](2022-09-02-13-27-05.png)
+
+* To update a value we must update all the ranges which contain that value and we can see that we can obtain all the indices of the BIT representing the ranges which the new number by just adding one to the last set bit of the index+1.
+
+
+
 
 
