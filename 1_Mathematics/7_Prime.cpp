@@ -2,10 +2,15 @@
 #define ll long long
 using namespace std;
 /**
- * @brief Based on the fact that divisors of a number exist in pairs so if we find the smaller numbers of those pairs then there is no need to find the large ones. 
+ * @brief Based on the fact that divisors of a number exist in pairs so if we find the smaller number of those pairs then there is no need to find the large ones. 
+ * 
  * So if x*y=n and x<y then x*x<=n and hence x<=n^(1/2).
+ * 
  * We elimenate all numbers which are divisible by 2 and 3.
- * We check that the number is not divisible by any other prime number and we generate the prime numbers to check by using the fact that prime numbers exist in the form 6*n-1 and 6*n+1.
+ * 
+ * We check that the number is not divisible by any other prime number and we generate the prime numbers to check by using the fact that prime numbers exist in the form 6*n-1 and 6*n+1. 
+ * 
+ * Not all 6*n-1 and 6*n+1 numbers are prime but all primes are of the form 6*n-1 and 6*n+1.
  * 
  * Time complexity : O(n^1/2)(But the complexity is less than this)
  * Auxillary space : O(1)

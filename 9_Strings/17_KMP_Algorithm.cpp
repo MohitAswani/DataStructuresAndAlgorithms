@@ -71,6 +71,6 @@ void KMP(string text,string patt)
 }
 int main()
 {
-    KMP("ababcababaad","ababa");
+    KMP("abcabcabc","abc");
     return 0;
 }
