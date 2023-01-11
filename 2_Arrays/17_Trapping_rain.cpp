@@ -23,7 +23,7 @@ void op(vector<ll> &arr)
     rmax.at(size-1)=arr.at(size-1);
     for(ll i=size-2;i>=0;i--)
     {
-        rmax[i]=max(arr[i],lmax[i-1]);
+        rmax[i]=max(arr[i],rmax[i+1]);
     }
     ll rain=0;
     for(ll i=0;i<size;i++)

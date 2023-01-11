@@ -4,7 +4,7 @@ using namespace std;
  * @brief In this problem we think recursively.
  * To move n disks from A to C we first need to move n-1 disks from A to B. Then we need to move the n th disk from A to C and then we move the rest of the disks from B to C.
  * 
- * So the recursive solution is fun(n,A,B,C)=fun(n-1,A,C,B)+(n from A to C)+fun(n-1,B,A,C)
+ * So the recursive solution is fun(n,A,B,C)=fun(n-1,A,C,B)(n-1 disks from A to B using C)+fun(n-1,B,A,C)(n-1 disks from B to C using A)
  * 
  * We come up with this solution using a bottom up approach when we consider 1 disk,2 disks,3 disks and so on.
  * 

@@ -6,7 +6,7 @@ using namespace std;
  * We notice a pattern that the difference between no. of flips required for 1 or 0 is either 1 or 0.
  * And when the 1st and last element are the same then the difference between the number of flips required for 0 or 1 is one. 
  * And we need to flip the element which does not occur at the beginning.
- * If the difference between flips is 0 then we can flip any element.
+ * If the difference between flips is 0 then we can flip any element. 
  * 
  * Time complexity : O(n)
  * Auxillary space : O(1)
