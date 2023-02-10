@@ -2,7 +2,7 @@
 #define ll long long
 using namespace std;
 /**
- * @brief This is the most efficient code for find the number of digits in a number.
+ * @brief This is the most efficient code for finding the number of digits in a number.
  * 
  * Time complexity : O(1).
  * Auxillary space : O(1). 

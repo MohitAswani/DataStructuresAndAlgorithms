@@ -3,7 +3,7 @@ using namespace std;
 const int R = 4, C = 4;
 /**
  * @brief In the below function we are searching for an element in the array by using the fact that the array is sorted row and columnwise. We either start from top right or bottom left (coz only then we can have both smaller and bigger elements )move accoringdly if element to be search is smaller or bigger.
- * 
+ *
  * Time complexity : O(R+C)
  * Auxillary space : O(1)
  *
@@ -14,16 +14,16 @@ void searching(int arr[R][C], int x)
 {
     if (x > arr[0][0] && x < arr[R - 1][C - 1]) // if element is not in this range then it is surely not present in the 2D matrix
     {
-        int i = C - 1, j = 0;
-        while (i > -1 && j < R)
+        int i = 0, j = C - 1;
+        while (i < R && j >= 0)
         {
             if (arr[i][j] < x)
             {
-                j++;
+                i++;
             }
             else if (arr[i][j] > x)
             {
-                i--;
+                j--;
             }
             else
             {

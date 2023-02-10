@@ -3,7 +3,7 @@ using namespace std;
 /*
 Advantages:
 
-* This matrix will have dynamic rows which are different from dynamic rows in double pointer matrix since and in the latter we will have to first allocate a size to the rows. An array of vector can have rows will any number of columns.
+* This matrix will have dynamic rows which are different from dynamic rows in double pointer matrix since and in the latter we will have to first allocate a size to the rows. An array of vector can have rows with any number of columns.
 * It is easy to pass to an function since we don't need to pass it as pointer/array of pointers.
 
 Disadvantages:
