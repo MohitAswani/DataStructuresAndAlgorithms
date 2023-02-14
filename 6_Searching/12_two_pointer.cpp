@@ -2,7 +2,7 @@
 using namespace std;
 /**
  * @brief Two pointer approach is another way of find if a pair with a given sum exists in a sorted array. So we first take two pointers one at 0 and one at n-1. We keep on moving these two pointers based on comparision of arr[l]+arr[r] with the given sum.
- * If arr[l]+arr[r]>x we make l--.
+ * If arr[l]+arr[r]>x we make r--.
  * If arr[l]+arr[r]<x we make l++.
  *
  * Time complexity : O(n)

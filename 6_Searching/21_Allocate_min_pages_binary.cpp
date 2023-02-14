@@ -1,5 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief In this solution we perform binary search for all the possible max sum values from max value to total sum.
+ * 
+ * If the solution is feasible we decrease the possible max value and if not possible we increase the same.
+ * 
+ * Time complexity : O(logn) (where n is the difference between max value and total sum)
+ * Auxillary space : O(1)
+ * 
+ * @param arr 
+ * @param size 
+ * @param k 
+ * @return int 
+ */
 int minPages(int arr[], int size, int k)
 {
     int sum = 0;

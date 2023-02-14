@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 /**
- * @brief In the below function we just find the first occurence of 1 and substract that from the length of the array since that will be te last occurence of 1 in the sorted array.
+ * @brief In the below function we just find the first occurence of 1 and substract that from the length of the array since that will be the last occurence of 1 in the sorted array.
  * 
  * Time complexity : O(logn)
  * Auxillary space : O(1)

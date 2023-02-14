@@ -21,7 +21,7 @@ int binary_search(int arr[], int x, int l, int r)
     }
 }
 /**
- * @brief To search in an infinite array we first find the index of a number where arr[r]<x and to search we keep on mutliplying the r by 2 until we satisfy the condition. Then we perform the binary search from (r/2+1,r).
+ * @brief To search in an infinite array we first find the index of a number where arr[r]>=x and to search we keep on mutliplying the r by 2 until we satisfy the condition. Then we perform the binary search from (r/2+1,r).
  *
  * This algorithm is commonly known as unbounded binary search
  *

@@ -2,8 +2,7 @@
 
 The idea is to maintain an array of linked list. 
 
-We use a hash function and using that we create a hash table which contains elements in linked list for
-each value of hash.
+We use a hash function and using that we create a hash table which contains elements in linked list for each value of hash.
 
 Eg: For hash(key)=key%7 we make an array of size seven with each element of that array being a linked list header
     And we put element at position key%7.
@@ -33,8 +32,7 @@ load factor alpha=n/m (this means how big we want our hash table to be)
 
 For expected chain length we assume uniform dist of keys = alpha (load factor).
 
-So if we make a hash table of size n the alpha is 1 and hence hash function have O(1) or constant time 
-requirrement.
+So if we make a hash table of size n the alpha is 1 and hence hash function have O(1) or constant time requirrement.
 
 Expected time to search = O(1+alpha)
 

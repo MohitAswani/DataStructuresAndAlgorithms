@@ -1,5 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief We simply use an hash table / unordered_map to find the frequency of elements.
+ * 
+ * Time complexity: Theta(n)
+ * Auxillary space : O(n)
+ * 
+ * @param arr 
+ * @param size 
+ */
 void frequenciesOfArray(int arr[],int size)
 {
     unordered_map <int,int> freq;
@@ -11,8 +21,6 @@ void frequenciesOfArray(int arr[],int size)
     {
         cout<<e.first<<" "<<e.second<<endl;
     }
-    //Time complexity: Theta(n)
-    //Auxillary space : O(n)
 }
 
 int main(){

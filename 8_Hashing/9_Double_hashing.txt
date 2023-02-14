@@ -17,8 +17,7 @@ hash(key,i)=(h1(key)+i*h2(key))%m.
 
 m=7
 h1(key)=key%7
-h2(key)=6-(key%6) (this function is used when collision occurs and this function must never return zero since then it will keep on
-probing the same location).
+h2(key)=6-(key%6) (this function is used when collision occurs and this function must never return zero since then it will keep on probing the same location).
 (h2 returns values from 1 to 6).
 
 So for {49,63,56,52,54,48}

@@ -2,6 +2,18 @@
 #define ll long long
 #define rep(i, t) for (ll i = 0; i < t; i++)
 using namespace std;
+
+/**
+ * @brief This is same as the previous case except that this time we are searching for a particular sum instead of searching for 0.
+ * 
+ * Time complexity : O(n)
+ * Auxillary space : O(n)
+ * 
+ * @param v 
+ * @param given_sum 
+ * @return true 
+ * @return false 
+ */
 bool subarrayWithGivenSum(vector<ll> v,int given_sum)
 {
     unordered_set<ll> s;
@@ -20,8 +32,6 @@ bool subarrayWithGivenSum(vector<ll> v,int given_sum)
         s.insert(sum);
     }
     return false;
-    //Time complexity : O(n)
-    //Auxillary space : O(n)
 }
 int main()
 {

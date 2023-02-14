@@ -43,7 +43,7 @@ public:
     }
     ~MyHash()
     {
-        delete [] table;
+        delete[] table;
     }
 };
 int main()

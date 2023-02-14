@@ -2,7 +2,8 @@
 using namespace std;
 /**
  * @brief In this algorithm we assume a1 is the smaller array and a2 is the bigger array. 
- * And if this assumption is not true then we basically divide the two arrays in two parts such that left part contains all the smaller elements and right half contains all the bigger elements.
+ * 
+ * And if this assumption is true then we basically divide the two arrays in two parts such that left part contains all the smaller elements and right half contains all the bigger elements.
  * 
  * We do binary search in the smaller array and try to find a index for which the above condition will be satisfied. 
  * 

@@ -1,10 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief 
+ *  
+ * The following is an easy implementation of open addressing using linear probing.
+ * 
+ * To implement open addressing the standand libraries take NULL instead of -1 and for -2 they take a dummy node and check for delete node by comparing the pointers or references with that dummy node.
+ * 
+ */
 class myHash
-/*
-To implement open addressing the standand libraries take NULL instead of -1 and for -2 they take a dummy
-node and check for delete node by comparing the pointers or references with that dummy node.
-*/
 {
     int cap, size;
     int *arr;
@@ -97,7 +102,7 @@ public:
 };
 int main()
 {
-    //Here we do LINEAR PROBING
+    // Here we do LINEAR PROBING
     myHash h1{7};
     h1.insert(49);
     h1.insert(56);

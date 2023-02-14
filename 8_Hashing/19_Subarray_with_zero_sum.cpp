@@ -2,6 +2,19 @@
 #define ll long long
 #define rep(i, t) for (ll i = 0; i < t; i++)
 using namespace std;
+
+/**
+ * @brief In the following solution we simply traverse the array and keep on storing the sum at particular element and if a sum repeats that means that the previous sub array from the first time it repeated and the current element had the sum 0.
+ * 
+ * Also we keep on checking for sum==0 for the case when the sum of inital elements is zero.
+ * 
+ * Time complexity : O(n)
+ * Auxillary space : O(n)
+ * 
+ * @param v 
+ * @return true 
+ * @return false 
+ */
 bool subarrayWithGivenSum(vector<ll> v)
 {
     unordered_set<ll> s;
@@ -20,7 +33,6 @@ bool subarrayWithGivenSum(vector<ll> v)
         s.insert(sum);
     }
     return false;
-    //Time complexity : O(n)
 }
 int main()
 {

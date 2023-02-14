@@ -2,10 +2,15 @@
 #define ll long long
 #define rep(i,t) for(ll i=0;i<t;i++)
 using namespace std;
-/*
-We cannot solve this problem by inserting all the elements into the set and then search for pair
-as in the case sum/2=elem it will return true even if elem is present only once in the array.
-*/
+
+/**
+ * @brief We cannot solve this problem by inserting all the elements into the set and then search for pair as in the case sum/2=elem it will return true even if elem is present only once in the array.
+ * 
+ * @param v 
+ * @param sum 
+ * @return true 
+ * @return false 
+ */
 bool  pairWithSum(vector <ll> v,int sum)
 {
     unordered_set <ll> s;

@@ -86,8 +86,7 @@ So to deal with this we mark that slot as Deleted sort and the search must not s
 
 ********CLUSTERING (PROBLEM WITH LINEAR PROBING)**********
 
-Due to linear probing clusters are created. So when k consecutive positions are filled and a new hash to be inserted then the 
-cluster will increase by size 1 and become k+1. So due to clustering every operation becomes costly.
+Due to linear probing clusters are created. So when k consecutive positions are filled and a new hash to be inserted then the cluster will increase by size 1 and become k+1. So due to clustering every operation becomes costly.
 
 
 *******TO HANDLE CLUSTERING***********
@@ -100,8 +99,7 @@ To prevent this we can use:
 
 hash(key,i)=(h(key)+i^2)%m.
 
-This leads to less clustering and hence less costly for other operations. But the problem of clustering remains.
-This leads to secondary clustering (linear had primary clusters).
+This leads to less clustering and hence less costly for other operations. But the problem of clustering remains. This leads to secondary clustering (linear had primary clusters).
 
 Another disadvantage is that it might not find a empty slot even if there is one present.
 

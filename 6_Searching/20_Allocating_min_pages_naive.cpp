@@ -9,6 +9,17 @@ int sum(int arr[],int b,int e)
     }
     return ans;
 }
+
+/**
+ * @brief Following is a recursive solution where we are making the cuts in the array and try to find the value of minimum of all the maximum element sums obtained by performing these cuts.
+ * 
+ * This solution is very slow and it exponential in time complexity.
+ * 
+ * @param arr 
+ * @param size 
+ * @param k 
+ * @return int 
+ */
 int minPages(int arr[],int size,int k)
 {
     if(k==1)
