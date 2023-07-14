@@ -1,5 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief In the following implementation of chaining we have dynamically allocated an array of list of integers.
+ * 
+ */
 class MyHash
 {
     int b;

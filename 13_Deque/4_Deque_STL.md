@@ -19,10 +19,10 @@
 * And for large size of pointer array we rarely see a doubling since every block of pointer array points a big chunk of data items.
 
 * This operation has the following time complexity : 
-                * push_back : O(1)
-                * push_front : O(1) (we can argue that it is O(1) amortized but the number of copy constructor calls is constant).
-                * pop_front : O(1)
-                * pop_back : O(1)
-                * random access : O(1) (since elements are stored in an array).
-                * insert : O(n)
-                * erase : O(n) (since its an contigous memory setup and hence insertion and deletion requires O(n) time since we need to move items).
+    * push_back : O(1)
+    * push_front : O(1) (we can argue that it is O(1) amortized but the number of copy constructor calls is constant).
+    * pop_front : O(1)
+    * pop_back : O(1)
+    * random access : O(1) (since elements are stored in an array).
+    * insert : O(n)
+    * erase : O(n) (since its an contigous memory setup and hence insertion and deletion requires O(n) time since we need to move items).

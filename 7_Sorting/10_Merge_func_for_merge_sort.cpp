@@ -1,5 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief 
+ * 
+ * The following function is same as the previous implementation of the function used to merge two sorted arrays only difference being the implementation using the low, mid and high variables.
+ * 
+ * Time complexity : theta(n) 
+ * Auxillary space : theta(n)
+ * 
+ * @param inp 
+ * @param low 
+ * @param mid 
+ * @param high 
+ */
 void merge(int inp[], int low, int mid, int high)
 {
     int n1 = mid + 1 - low, n2 = high - mid;
@@ -36,7 +50,7 @@ void merge(int inp[], int low, int mid, int high)
         j++;
         k++;
     }
-    //time complexity : theta(n) ,Auxillary space : theta(n)
+    
 }
 void print(int arr[], int n)
 {

@@ -78,7 +78,6 @@ public:
 };
 int main()
 {
-
     // CPP stack's behaviour on peek and pop on empty stack is undefined.
 
     myStack s(5);

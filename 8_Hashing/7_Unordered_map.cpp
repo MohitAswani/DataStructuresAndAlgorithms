@@ -1,5 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief In the following we have implemented map using a vector of pair of <int,list<int>>.
+ * 
+ */
 class uMap
 {
     vector <pair<int,list<int>>> m;

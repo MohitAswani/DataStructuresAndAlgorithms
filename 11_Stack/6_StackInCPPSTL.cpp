@@ -34,7 +34,7 @@ int main(){
      * 
      * By default it is implemented using deque container.
      * 
-     * Since stack is implemented using these 3 containers and works as an interface it is also called container adapter.
+     * Since stack is implemented using these 3 containers and works as an interface it is also called "container adapter".
      * 
      * So queue, priority queue all these are container adapter coz they are build on top of other containers.
      * 

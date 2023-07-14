@@ -35,8 +35,6 @@ int first_occ(int arr[],int n,int x)
         }
     }
     return -1;
-    //time complexity: O(logn)
-    //auxillary space: O(1)
 }
 int main(){
     int arr[]={10,10,10,10,15,15,20,20};

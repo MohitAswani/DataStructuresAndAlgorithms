@@ -2,6 +2,18 @@
 #define ll long long
 #define rep(i,t) for(ll i=0;i<t;i++)
 using namespace std;
+
+/**
+ * @brief We simply make a window and search for the anagram in that window.
+ * 
+ * Time complexity : O(CHAR*(N-M)+M) so O(N)
+ * Auxillary space : O(CHAR)
+ * 
+ * @param str1 
+ * @param str2 
+ * @return true 
+ * @return false 
+ */
 bool AnagramSearch(string str1,string str2)
 {
     vector <ll> CT(256);
@@ -24,8 +36,6 @@ bool AnagramSearch(string str1,string str2)
     return false;
 }
 
-// Time complexity : O(CHAR*(N-M)+M) so O(N)
-// Auxillary space : O(CHAR)
 int main(){
     cout<<AnagramSearch("geeksforgeeks","frog");
     return 0;

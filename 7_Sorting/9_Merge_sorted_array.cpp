@@ -1,5 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief 
+ * 
+ * To merge two sorted arrays we first run a common loop and compare the elements in it.
+ * 
+ * All the rest of the elements in either of the arrays which are bigger than the other array can be printed seperately.
+ * 
+ * Time complexity : O(n1+n2)
+ * Auxillary space : O(1)
+ * 
+ * @param arr1 
+ * @param n1 
+ * @param arr2 
+ * @param n2 
+ */
 void merging(int arr1[], int n1, int arr2[], int n2)
 {
     int i1 = 0, i2 = 0;
@@ -27,7 +43,6 @@ void merging(int arr1[], int n1, int arr2[], int n2)
         cout << arr2[i2] << " ";
         i2++;
     }
-    //this is an efficeint solution of theta(n1+n2) time complexity and O(1) auxillary space
 }
 int main()
 {

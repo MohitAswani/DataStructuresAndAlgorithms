@@ -5,12 +5,24 @@ using namespace std;
 
 const int q=101;
 
+/**
+ * @brief In rabin-karp algorithmn instead of comparing the characters directly we calculate the hash value of every window of the text and if it matches the hash value of pattern we compare the pattern with that window.
+ * 
+ * We do modulo as weighted sum might become very large . 
+ * 
+ * q is generally a prime no. and is a big as possible so that we have less spurious hits.
+ * 
+ * Here M=length of pattern, and N=length of text.
+ * 
+ * Time complextiy : O((N-M+1)*M) (Worst case in case of AAAAA and AAA) (Works better than naive at average)
+ * 
+ * RABIN KARP USED TO FIND MULTIPLE PATTERNS IN A TEXT SO IN THAT CASE WE USE AN ARRAY OF PATTERN HASHES AND COMPARE THEM.
+ * 
+ * @param text 
+ * @param patt 
+ */
 void func(string &text, string &patt)
-{
-    //We do modulo as weighted sum might become very large . q is generally a prime no. and is a big as possible so that we have less spurious hits.
-
-    //M=length of patter, and N=length of text
-    
+{  
     //Computing (d^(M-1))%q
     int h=1;
     for(int i=1;i<=patt.length()-1;i++)
@@ -53,13 +65,6 @@ void func(string &text, string &patt)
             t=t+q;
         }
     }
-
-    //Time complextiy : O((N-M+1)*M)
-    // N- length of text , M- length of patt
-    //Worst case in case of AAAAA and AAA
-    //Works better than nive at average
-    
-    // RABIN KARP USED TO FIND MULTIPLE PATTERNS IN A TEXT SO IN THAT CASE WE USE AN ARRAY OF PATTERN HASHES AND COMPARE THEM
 
 }
 int main()

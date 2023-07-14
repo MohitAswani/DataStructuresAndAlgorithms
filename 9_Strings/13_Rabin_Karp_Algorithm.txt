@@ -1,11 +1,8 @@
-
-In rabin-karp algorithmn instead of comparing the characters directly we calculate the hash value of every window of the text and if 
-it matches the hash value of pattern we compare the pattern with that window.
+In rabin-karp algorithmn instead of comparing the characters directly we calculate the hash value of every window of the text and if it matches the hash value of pattern we compare the pattern with that window.
 
 ROLLING HASH:
 
-And instead of manually calculating the hash value for each window we use window sliding technique for calculating hash and 
-this is know as rolling hash.
+And instead of manually calculating the hash value for each window we use window sliding technique for calculating hash and this is know as rolling hash.
 
 t(i+1)=t(i)+txt[i+m]-txt[i]
 
@@ -17,7 +14,7 @@ So to avoid such issues we use a better hash function.
 
 So instead of just adding the ASCII values we find the weighted sum of the characters and hence the formula for rolling hash becomes:
 
-t(i+1)=d(t(i)-txt[i]*(d^(m-1)))+txt[i+m]
+t(i+1)=d*(t(i)-txt[i]*(d^(m-1)))+txt[i+m]
 m->length of pattern
 
 

@@ -6,7 +6,6 @@ Adv of this double pointer setup is that we create array with rows of different 
 JAGGED ARRAY: 2d array with different row sizes.
 
 DisAdv of this double pointer setup is that it is not cache friendly as we will see many cache misses coz it is stored in contigous memory location.
-
 */
 void print(int **arr, int m, int n)
 {

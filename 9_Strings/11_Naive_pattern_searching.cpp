@@ -2,6 +2,15 @@
 #define ll long long
 #define rep(i, t) for (ll i = 0; i < t; i++)
 using namespace std;
+
+/**
+ * @brief This is a brute force approach to manual searching for the pattern at each index of the string.
+ * 
+ * Time complexity : O((n-m+1)*m)
+ * Auxillary space : O(1)
+ * @param text 
+ * @param patt 
+ */
 void func(string &text, string &patt)
 {
     for (int i = 0; i <= (text.length() - patt.length()); i++)
@@ -20,16 +29,11 @@ void func(string &text, string &patt)
         }
     }
     cout << endl;
-
-    // n = length(txt), m = length(patt)
-    // Time complexity : O((n-m+1)*m)
-    // Auxillary space : O(1)
 }
 int main()
 {
     string text = "AAAAA";
     string patt = "AAA";
     func(text, patt);
-    //cout<<func(str)<<endl;
     return 0;
 }

@@ -22,8 +22,6 @@ int sum(int arr[],int size,int x)
         hash[arr[i]]=1;
     }
     return 0;
-    //Time complexity is O(n)
-    //Space complexity is O(n)
 }
 int main()
 {

@@ -5,7 +5,11 @@ using namespace std;
 /**
  * @brief To solve this problem efficient and using only O(n) extra space we do that following.
  *
- * We first try to find the previous small of every element. But while poping out the larger elements from the stack to find the previous small, we find the area of the rectangle will the element being poped as the smallest element in the rectangle. So the element next to it in the stack (if it exists) will be previous smaller element and the element for which we are currently checking is the next smaller element. So we find the area using the previous solutions logic.
+ * We first try to find the previous small of every element. 
+ * 
+ * But while poping out the larger elements from the stack to find the previous small, we find the area of the rectangle with the element being poped as the smallest element in the rectangle. 
+ * 
+ * So the element next to it in the stack (if it exists) will be previous smaller element and the element for which we are currently checking is the next smaller element. So we find the area using the previous solutions logic.
  *
  * Also in the end we check the stack for all the elements which do not have a next smallest element.
  * 

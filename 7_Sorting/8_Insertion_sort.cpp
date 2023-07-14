@@ -1,5 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief 
+ * 
+ * In place and stable
+ * 
+ * Used in practise for small arrays(TimSort and Intrasort)
+ * 
+ * TimSort and Introsort are hybrid sorting algorithm which have combination of different sorting algorithm which are used based on size of array
+ * 
+ * O(n) best case (when array sorted so we will never go inside the while loop)
+ * 
+ * Best method for sorting an almost sorted array.
+ * 
+ * Time complexity : O(n^2)  (worst case when array sorted in reverse order, O(n^2) for average case)
+ * 
+ * @param arr 
+ * @param n 
+ */
 void insertion_sort(int arr[],int n)
 {
     for(int i=1;i<n;i++)
@@ -12,13 +31,6 @@ void insertion_sort(int arr[],int n)
         }
         arr[j+1]=key;
     }
-    //O(n^2) worst case (when array sorted in reverse order)
-    ///In place and stable
-    //Used in practise for small arrays(TimSort and Intrasort)
-    //TimSort and Introsort are hybrid sorting algorithm which have combination of different sorting algorithm which are used based on size of array
-    //O(n) best case (when array sorted so we will never go inside the while loop)
-    //O(n^2) for average case
-    //Best arraay for sorting an almost sorted array.
 }
 void print(int arr[], int n)
 {

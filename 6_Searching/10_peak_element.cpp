@@ -2,6 +2,7 @@
 using namespace std;
 /**
  * @brief
+ * 
  * Peak element is any element which is bigger than its neighbouring elements.
  * 
  * If there is an independenet array then it will always have peak element.

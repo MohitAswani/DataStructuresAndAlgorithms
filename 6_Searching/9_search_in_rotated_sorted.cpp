@@ -2,9 +2,13 @@
 using namespace std;
 /**
  * @brief In a rotated array one part of the array will be sorted and the other part not be.
+ * 
  * So we first check if the required element is present in the middle.
+ * 
  * Then we check if the left part is sorted or the right part. Then we search for our element using the range of the sorted part. If the requirred element is in the sorted part we search for it else we move to the other part.
+ * 
  * And the non-sorted part will also contain a sorted part and a unsorted part.
+ * 
  * We keep on doing this until we find the element or l becomes greater than r.
  *
  * Time complexity : O(logn)

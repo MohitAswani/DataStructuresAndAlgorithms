@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int arr[3][2]={10,20,30,40,50,60}; //for 2D arrays we need not write the internal brackets
+    int arr[3][2]={10,20,30,40,50,60}; // for 2D arrays we need not write the internal brackets
     for(int i=0;i<3;i++)
     {
         for(int j=0;j<2;j++)

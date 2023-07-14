@@ -1,36 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
-/*
-Unordered map used to store key,value pair but difference from map being its implementation using hashing.
-(Simple is implemented using red-black tree)
 
-Another difference being map stores key in order but unordered doesnot.
-
-So it is basically a map only with faster insert,delete and search(with O(1)).
-
-TIME COMPLEXITIES:
-
-O(1):
-begin()
-end()
-size()
-empty()
-
-O(1) on average:
-Searching:
-count()
-find()
-[]
-at
-
-Deletion:
-erase(key)
-
-Insertion:
-insert
-
-insert()
-*/
+/**
+ * @brief 
+ * 
+ * Unordered map used to store key,value pair but difference from map being its implementation using hashing. (Simple is implemented using red-black tree)
+ *
+ * Another difference being map stores key in order but unordered doesnot.
+ *
+ * So it is basically a map only with faster insert,delete and search(with O(1)).
+ *
+ * TIME COMPLEXITIES:
+ *
+ * O(1): begin(),end(),size(),empty()
+ *
+ * O(1) on average: 
+ * Searching : count(),find(),[],at
+ * Deletion: erase(key)
+ * Insertion: insert,insert()
+ * 
+ * @return int 
+ */
 int main(){
     unordered_map <string,int> m;
     m["gfg"]=20;    //[] is a member access operator which returns a reference to the memory containing that key.

@@ -1,13 +1,12 @@
-Introduction of Hashing:
+## Introduction of Hashing:
 
-1)It is used to implement dictionaries/maps and sets.
+1) It is used to implement dictionaries/maps and sets.
 
-2)It does search, insert and delete operation in O(1) time which is much better than any other data structure.
+2) It does search, insert and delete operation in O(1) time which is much better than any other data structure.
 
-3)But for some operations it is very costly .Like for sorting or for finding keys just smaller than 
-or just bigger takes a high cost.
+3) But for some operations it is very costly like for sorting or for finding keys just smaller than or just bigger takes a high cost.
 
-4)Not useful for:
+4) Not useful for:
     * Finding closest keys.
     * Sorted order .
     (For the above two operations we use AVL tree or red black tree)
@@ -15,7 +14,7 @@ or just bigger takes a high cost.
     (For this we use trie data structure)
 
 
-Application of Hashing:
+## Application of Hashing:
 
 Second most used data structures after arrays.
 

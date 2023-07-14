@@ -1,5 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+/**
+ * @brief 
+ * 
+ * Does less memory write compared to quick,merge,insertion etc. 
+ * 
+ * But cycle sort best for memory write.
+ * 
+ * Memory write is harmful for  EEPROM as it decreases its life term.
+ * 
+ * Basic idea for heapsort.
+ * 
+ * Not stable but in place.
+ * 
+ * Time complexity : theta(n^2) (Also it always takes this much time)
+ * Auxillary space : O(1)
+ * 
+ * @param arr 
+ * @param n 
+ */
 void selection_sort(int arr[], int n)
 {
     for(int i=0;i<n-1;i++)
@@ -14,12 +34,6 @@ void selection_sort(int arr[], int n)
         }
         swap(arr[i],arr[mini]);
     }
-    //Time complexity theta(n^2) and also it always takes this much time
-    //Does less memory write compared to quick,merge,insertion etc. 
-    //But cycle sort best for memory write.
-    //Memory write is harmful for  EEPROM as it decreases its life term.
-    //Basic idea for heapsort
-    //Not stable but in place
 }
 void print(int arr[], int n)
 {

@@ -14,7 +14,7 @@ using namespace std;
 class GetMinStackPositive
 {
     stack<ll> s;
-    ll min;
+    ll min; 
 
 public:
     void push(ll x)

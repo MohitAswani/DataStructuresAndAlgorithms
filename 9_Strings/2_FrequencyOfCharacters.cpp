@@ -3,10 +3,14 @@
 #define rep(i,t) for(ll i=0;i<t;i++)
 using namespace std;
 
-void func(vector <ll> v)
-{
-
-}
+/**
+ * @brief Calculating the frequency of character by storing in a 26 size array by finding the difference of character from the ASCII value of 'a'.
+ * 
+ * Time complexity : O(n)
+ * Auxillary space : O(1)
+ * 
+ * @return int 
+ */
 int main(){
     string str="geeksforgeeks";
     vector <ll> count(26,0);
@@ -21,6 +25,6 @@ int main(){
             cout<<(char)(i+'a')<<":"<<count[i]<<endl;
         }
     }
-    //Time complexity: O(n)
+
     return 0;
 }

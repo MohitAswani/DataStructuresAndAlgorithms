@@ -28,15 +28,29 @@ void fillLPS(string str, vector<ll> &lps)
         }
     }
 }
-// Time complexity : O(N)
 
+/**
+ * @brief If find the position of the pattern in a string we use the KMP algorithm.
+ * 
+ * So the only difference between the naive and the KMP algorithm is the fact that instead starting every match from the first position we start it from the lps because those are the strings which we know will match.
+ * 
+ * Time complexity : O(N)
+ * Auxillary space : O(M) (M is pattern size)
+ * 
+ * Time complexity analysis : in every itteration we are either moving ahead in the head or sliding the patter ahead.
+ * 
+ * So we are doing N work for traversing the text and N for sliding the pattern so the overall time complexity is O(N)
+ * 
+ * @param text 
+ * @param patt 
+ */
 void KMP(string text,string patt)
 {
     int n=text.length();
     int m=patt.length();
 
     vector <ll> lps;
-    fillLPS(patt,lps);
+    fillLPS(patt,lps);  // Time complexity : O(N)
     int i=0,j=0;
     while(i<n)
     {
@@ -62,12 +76,6 @@ void KMP(string text,string patt)
             }
         }
     }
-
-    /*
-    Time complexity analysis : in every itteration we are either moving ahead in the head or sliding the patter ahead.
-
-    So we are doing N work for traversing the text and N for sliding the pattern so the overall time complexity is O(N)
-    */
 }
 int main()
 {

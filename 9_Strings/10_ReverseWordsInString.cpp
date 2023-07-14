@@ -2,6 +2,13 @@
 #define ll long long
 #define rep(i,t) for(ll i=0;i<t;i++)
 using namespace std;
+
+/**
+ * @brief Just using the normal reversing string logic to reverse the string.
+ * 
+ * @param str 
+ * @return string 
+ */
 string func(string str)
 {
     string temp="";

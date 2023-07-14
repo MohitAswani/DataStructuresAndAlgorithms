@@ -50,8 +50,6 @@ int minPages(int arr[], int size, int k)
     }
     return ans;
 
-    //time complexity : O(n*log(sum-max))
-    //if sum is to high we use dynamic programmic solution which has O(n^2*k) time.
 }
 int main()
 {
