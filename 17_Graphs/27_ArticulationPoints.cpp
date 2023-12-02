@@ -21,13 +21,12 @@ using namespace std;
  *
  * We can solve the problem using only this approach by starting DFS from every node and finding the ones with more than one children but it will be inefficent and the time complexity will be O(V*(V+E)).
  *
- * Also this idea is only valid for root node and not for any other nodes because nodes
- other than root can have children with back-edges but root cannot since they have no ancestor and hence no child of root can have backedges to its parent.
+ * Also this idea is only valid for root node and not for any other nodes because nodes other than root can have children with back-edges but root cannot since they have no ancestor and hence no child of root can have backedges to its parent.
  *
  *
  * 2) If a non-root node u in DFS tree has a child v ( ONLY ONE SUCH CHILD NEEDS TO EXIST )such that no ancestors are reachable from the subtree rooted with v, then u is an articulation point.
  *
- * NO LEAVE CAN A ARTICULATION POINT SINCE THEY HAVE NO CHILD.
+ * NO ONE CAN LEAVE A ARTICULATION POINT SINCE THEY HAVE NO CHILD.
  *
  * Efficient Implementation :
 					* To implement this we maintain two array discovery time and low value.
@@ -40,7 +39,7 @@ using namespace std;
 					*
 					* For non-root node u to be an articulation point then must exist a child v such that low[v]>=disc[u] (low value of child is greater than discovery time of the parent).
 					*
-					* Time complexity : O(V*E)
+					* Time complexity : O(V+E)
 					*
 					* ** WATCH THE VIDEO FOR BETTER UNDERSTANDING **
  *

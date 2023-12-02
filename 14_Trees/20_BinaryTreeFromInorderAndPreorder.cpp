@@ -23,7 +23,7 @@ public:
  *
  * To solve this problem we use the preorder to find the root of the current tree/subtree which is the pre[0].
  *
- * Then we find the index of pre[0] in in array and all the elements from start upto pre[0] represent the left subtree and all the elements from pre[0]+1 to end represents the right subtree.
+ * Then we find the index of pre[0] in inorder array and all the elements from start upto pre[0] represent the left subtree and all the elements from pre[0]+1 to end represents the right subtree.
  *
  * And then we call the function recursively.
  *

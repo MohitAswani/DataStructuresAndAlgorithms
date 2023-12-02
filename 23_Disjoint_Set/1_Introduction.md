@@ -22,7 +22,7 @@
 
     * Disjoint set supports two operations : 
         * Find : returns a representative of x's set (or social network) 
-        *union : combines sets of x and y (same as makeFriends())
+        * Union : combines sets of x and y (same as makeFriends())
 
     * For this problem union is same as makeFriends and it combines the sets of x and y.
 

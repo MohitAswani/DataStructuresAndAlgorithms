@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define ll long long
-using namespace std;
+using namespace std;  
 /**
  * @brief An element is called leader in an array if all the elements on the right of it are smaller than it.
  * To find this we simply traverse the array in reverse order and keep on printing the maximum elements.

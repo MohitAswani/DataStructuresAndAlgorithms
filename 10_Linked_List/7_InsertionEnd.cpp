@@ -40,6 +40,7 @@ void insertAtEnd(Node *&head,int data){
     // Special case for when the head node is null.
     if(head==NULL){
         head=node;
+        return ;
     }
     
     Node * curr=head;

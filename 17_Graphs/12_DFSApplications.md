@@ -10,4 +10,4 @@
 
     ![](2021-10-22-08-43-22.png)
 
-5) Path finding : this is natural to DFS since if we go from source to destination the stack will contain all the vertices of the path but in BFS if we reach the queue may or may not contain all the vertices from the source.
+5) Path finding : this is natural to use DFS since if we go from source to destination the stack will contain all the vertices of the path but in BFS if we reach the queue may or may not contain all the vertices from the source.

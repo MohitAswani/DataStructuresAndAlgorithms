@@ -33,7 +33,7 @@ bool DFS_helper(vector<int> adj[], int s, vector<bool> &visited, vector<bool> &r
     return false;
 }
 /**
- * @brief So basically the logic here is that if we detect a visited node in the same call of BFS helper then there is a cycle.
+ * @brief So basically the logic here is that if we detect a visited node in the same call of DFS helper then there is a cycle.
  *
  * Time complexity : O(V+E)
  * Auxillary space : O(V)

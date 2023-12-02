@@ -7,7 +7,7 @@ using namespace std;
  * 
  * When we delete at front we do front=(front+1)%cap and when we do insert at rear we do rear=(rear+1)%cap.
  * 
- * When we insert at front we do0 front=(front-1+cap)%cap and when we do delete at rear we do rear=(rear-1+cap)%cap;
+ * When we insert at front we do front=(front-1+cap)%cap and when we do delete at rear we do rear=(rear-1+cap)%cap;
  * 
  * Also we do not have a variable for the rear element since we can simply find rear using rear = (front+size-1)%cap.
  */

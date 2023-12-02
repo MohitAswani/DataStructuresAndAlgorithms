@@ -15,7 +15,7 @@ using namespace std;
  * 
  * To understand watch the video.
  * 
- * Time complexity : O(n1)
+ * Time complexity : O(log(n1))
  * Auxillary space : O(1)
  * 
  * @param arr1 

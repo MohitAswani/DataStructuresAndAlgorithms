@@ -10,7 +10,7 @@ using namespace std;
  *
  * Rank is nothing but height of the tree.
  *
- * Idea is simple , when we do union of two elements we have representative of those two elements, then we compare their heights and since we do not want the height of the tree to grow hence we make the smaller height representative as the child of the hight height representative.
+ * Idea is simple , when we do union of two elements we have representative of those two elements, then we compare their heights and since we do not want the height of the tree to grow hence we make the smaller height representative as the child of the high height representative.
  *
  * So with the parent array we also need to maintain the rank array.
  *

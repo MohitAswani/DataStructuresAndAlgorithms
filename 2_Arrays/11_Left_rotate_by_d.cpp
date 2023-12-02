@@ -2,7 +2,7 @@
 #define ll long long
 using namespace std;
 /**
- * @brief To reverse the array by d we reverse the first d element. Then we reverse the rest of the n-d elements. Finally we reverse the whole array. This is equivalent to left rotating the array by d.
+ * @brief To left rotate the array by d we reverse the first d element. Then we reverse the rest of the n-d elements. Finally we reverse the whole array. This is equivalent to left rotating the array by d.
  * 
  * Time complexity : O(n)
  * Space complexity : O(1)

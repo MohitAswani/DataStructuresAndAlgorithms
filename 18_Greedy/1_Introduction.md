@@ -1,6 +1,6 @@
 # Greedy algorithms :
 
-* Mainly useful for optimization problems ( problems in which we need to maximize of minimize something).
+* Mainly useful for optimization problems ( problems in which we need to maximize or minimize something).
 
 * General structure of greedy algorithms : ![](2022-07-31-10-20-19.png)
 

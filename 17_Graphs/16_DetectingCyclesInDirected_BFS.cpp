@@ -68,7 +68,6 @@ bool BFS_Helper(vector<int> adj[], int V, int s, vector<bool> &visited)
 bool cycleInDirected(vector<int> adj[], int v)
 {
     vector<bool> visited(v + 1, false);
-    vector<int> parent(v + 1, -1);
     for (int i = 0; i <= v; i++)
     {
         if (visited[i] == false)

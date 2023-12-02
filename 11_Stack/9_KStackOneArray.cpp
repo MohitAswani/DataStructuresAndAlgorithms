@@ -15,7 +15,7 @@ using namespace std;
  * 
  * Also we want to use the space efficient and not waste any space if its available to do that we use an array called next which stores the next element of the stack and hence we don't need to store the elements in consecutive blocks we can just use next array to refer to the next element.
  * 
- * Next array server two purposes : it tells us the next slot , it tells us about the next free slot.
+ * Next array serves two purposes : it tells us the next slot , it tells us about the next free slot.
  * 
  * Also we have a element called freeTop which gives us the top of free stack.
  *

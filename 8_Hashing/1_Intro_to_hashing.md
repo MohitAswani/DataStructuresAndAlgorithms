@@ -18,18 +18,18 @@
 
 Second most used data structures after arrays.
 
-1)Implementing dictionaries/maps.
+1) Implementing dictionaries/maps.
 
-2)Database indexing. (or we use B or B+ indexing)
+2) Database indexing. (or we use B or B+ indexing)
 
-3)Cryptography
+3) Cryptography
 
-4)Caches (in websites)
+4) Caches (in websites)
 
-5)Symbol tables in compilers/instructors : used to detect keywords
+5) Symbol tables in compilers/instructors : used to detect keywords
 
-6)Routers
+6) Routers
 
-7)Getting data from databases : used in associative arrays for storing data.
+7) Getting data from databases : used in associative arrays for storing data.
 
-8)Many more.
+8) Many more.
