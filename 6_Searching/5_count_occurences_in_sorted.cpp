@@ -53,7 +53,7 @@ int last_occ(int arr[],int n,int x)
 /**
  * @brief To count the number of occurences of a number using binary search we find the first occurence and the last occurence of the number and then we substract the two. Giving us the number of times that number occurred in the array.
  * 
- * This is method to find the occurences of a number with O(logn) timem in a sorted array without using hashing (hence O(1) auxillary space).
+ * This is method to find the occurences of a number with O(logn) time in a sorted array without using hashing (hence O(1) auxillary space).
  * 
  * Time complexity : O(logn)
  * Auxillary space : O(1)

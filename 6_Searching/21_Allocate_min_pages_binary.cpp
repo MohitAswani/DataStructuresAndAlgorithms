@@ -6,7 +6,7 @@ using namespace std;
  * 
  * If the solution is feasible we decrease the possible max value and if not possible we increase the same.
  * 
- * Time complexity : O(logn) (where n is the difference between max value and total sum)
+ * Time complexity : O(nlogn) (where n is the difference between max value and total sum)
  * Auxillary space : O(1)
  * 
  * @param arr 

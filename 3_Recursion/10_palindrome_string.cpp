@@ -16,10 +16,7 @@ bool func1(string s,string r="",int k=0)
 {
     if(k==s.length())
     {
-        if(r==s)
-        return true;
-
-        return false;
+        return r==s;
     }
     r=s.at(k)+r;
     return func1(s,r,k+1);

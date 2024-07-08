@@ -9,9 +9,9 @@ using namespace std;
  * 
  * If this condition is satisfied we find the median by :
  * 
- * 1) If sum of lengths is even : maximum of the maximum of the left part of the arrays.
+ * 1) If sum of lengths is odd : maximum of the maximum of the left part of the arrays.
  * 
- * 2) If sum of lengths is odd : average of maximum of the maximum of the left part of the arrays and minimum of the minimum of the right part of the arrays.
+ * 2) If sum of lengths is even : average of maximum of the maximum of the left part of the arrays and minimum of the minimum of the right part of the arrays.
  * 
  * To understand watch the video.
  * 

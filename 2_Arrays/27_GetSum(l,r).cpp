@@ -7,7 +7,7 @@ using namespace std;
  * To solve this problem we store the sum of all the elements upto a particular index in an array and use that array to find the sum between l and r.
  * 
  * Time complexity : O(n)
- * Auxillary space : O(1)
+ * Auxillary space : O(n)
  * 
  * @param arr 
  * @param l 

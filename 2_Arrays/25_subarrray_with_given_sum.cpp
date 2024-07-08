@@ -4,7 +4,7 @@ using namespace std;
 /**
  * @brief Here we are given an unsorted array of non-negative numbers and we need to find if a sub-array(contigous part of array) of the given sum exists.
  * 
- * So we begin with zeros and keep on add elements to the sum until the sum becomes greater or equal to gsum.
+ * So we begin with zero and keep on add elements to the sum until the sum becomes greater or equal to gsum.
  * If it becomes equal we have found our answer.
  * If it becomes greater we start removing the starting elements of that sub-array till the sum becomes less than gsum.
  * 

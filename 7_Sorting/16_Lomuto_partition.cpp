@@ -27,8 +27,8 @@ void print(int arr[], int n)
     cout << endl;
 }
 int main(){
-    // int arr[]={70,60,80,40,30};  //Cornor case : when last element is smaller than all the elements
-    int arr[]={30,40,20,50,80};  //Cornor case : pivot greater tham all the elements
+    // int arr[]={70,60,80,40,30};  //Corner case : when last element is smaller than all the elements
+    int arr[]={30,40,20,50,80};  //Corner case : pivot greater tham all the elements
     int size=sizeof(arr)/sizeof(int);
     print(arr,size);
     lomuto(arr,0,size-1);
