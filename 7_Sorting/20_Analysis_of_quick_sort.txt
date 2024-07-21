@@ -27,20 +27,16 @@ This space is requirred only for quick sort not partition func's.
 
 ******Hoare's vs Lomuto's*******:
 
-Hoare’s scheme is more efficient than Lomuto’s partition scheme because it does three times fewer swaps on average, and
-it creates efficient partitions even when all values are equal.
+Hoare’s scheme is more efficient than Lomuto’s partition scheme because it does three times fewer swaps on average, and it creates efficient partitions even when all values are equal.
 
-Like Lomuto’s partition scheme, Hoare partitioning also causes Quick sort to degrade to O(n^2) when the input array is 
-already sorted, it also doesn’t produce a stable sort.
+Like Lomuto’s partition scheme, Hoare partitioning also causes Quick sort to degrade to O(n^2) when the input array is already sorted, it also doesn’t produce a stable sort.
 
 
-Note that in this scheme, the pivot’s final location is not necessarily at the index that was returned, and the next two segments that 
-the main algorithm recurs on are (lo..p) and (p+1..hi) as opposed to (lo..p-1) and (p+1..hi) as in Lomuto’s scheme.
+Note that in this scheme, the pivot’s final location is not necessarily at the index that was returned, and the next two segments that the main algorithm recurs on are (lo..p) and (p+1..hi) as opposed to (lo..p-1) and (p+1..hi) as in Lomuto’s scheme.
 
 
 
 ******Randomized pivot********:
 The quick sort algo (lomuto & hoare) will always give the worst time and space complexity with sorted array so it leads to pattern of worst cases.
 
-To prevent this from happening we use random pivot from l to r and swap it with the pre-decided pivot of our algo. This prevents a pattern of worst cases 
-and can be proved to have a time complexity of O(nlogn) and space complexity of O(logn).
+To prevent this from happening we use random pivot from l to r and swap it with the pre-decided pivot of our algo. This prevents a pattern of worst cases and can be proved to have a time complexity of O(nlogn) and space complexity of O(logn).

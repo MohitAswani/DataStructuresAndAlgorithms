@@ -90,7 +90,7 @@
 
 * So now if we search(15) we get a empty slot just before 15 and the search will stop there.
 
-* So to deal with this we mark that slot as Deleted sort and the search must not stop at deleted slot and insert can insert at deleted sort.
+* So to deal with this we mark that slot as Deleted slot and the search must not stop at deleted slot and insert can insert at deleted slot.
 
 
 ## CLUSTERING (PROBLEM WITH LINEAR PROBING)
@@ -116,7 +116,7 @@
 
         * So mathematically Quadratic probing will find a slot only if :
 
-            1) Alpha(load factor)<0.5 or number of slots present > number of keys.
+            1) Alpha(load factor)<0.5 or number of slots present > 2 * number of keys.
 
             2) m is prime.
 

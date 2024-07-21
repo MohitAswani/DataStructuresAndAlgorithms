@@ -19,7 +19,7 @@ using namespace std;
 void merging(int arr1[], int n1, int arr2[], int n2)
 {
     int i1 = 0, i2 = 0;
-    while (i1 < n1 && i2 < n2)  //this loop will completely print one of the loop and rest will be bigger than all the printed elements 
+    while (i1 < n1 && i2 < n2)  //this loop will completely print one of the array and rest will be bigger than all the printed elements 
     {
         if (arr1[i1] <= arr2[i2])   //equal to for stability so that first array element appear first
         {
