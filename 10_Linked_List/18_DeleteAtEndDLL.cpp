@@ -39,8 +39,6 @@ void deleteAtEnd(Node *&head){
         return ;
     }
 
-    Node *temp=head;
-
     if(head->next==NULL){
         delete head;
         head=NULL;

@@ -6,7 +6,7 @@ In the Rabin-Karp algorithm, instead of comparing the characters directly, we ca
 
 Instead of manually calculating the hash value for each window, we use a window sliding technique for calculating hash values. This is known as a rolling hash.
 
-\[ t(i+1) = t(i) + \text{txt}[i+m] - \text{txt}[i] \]
+t(i+1) = t(i) + txt[i+m] - txt[i]
 
 ### Spurious Hit
 
@@ -14,7 +14,7 @@ A spurious hit occurs when the window has the same characters as the pattern but
 
 Instead of just adding the ASCII values, we find the weighted sum of the characters. Hence, the formula for the rolling hash becomes:
 
-\[ t(i+1) = d \times (t(i) - \text{txt}[i] \times d^{(m-1)}) + \text{txt}[i+m] \]
+t(i+1) = d * (t(i) - txt[i] * d^(m-1)) + txt[i+m]
 
 where:
 - \( m \) is the length of the pattern
