@@ -20,7 +20,7 @@
 
 * Trie (used to represent dictionaries , also support prefix search)
 
-* Suffix tree (usef to search for patterns in strings)
+* Suffix tree (used to search for patterns in strings)
 
 * Binary index tree (used for range query search / faster for limited set of operations)
 

@@ -11,7 +11,7 @@ public:
 
     Node(int k)
     {
-        key = k;
+        key = k;  
         left = NULL;
         right = NULL;
     }

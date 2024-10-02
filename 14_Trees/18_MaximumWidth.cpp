@@ -20,7 +20,7 @@ public:
  * @brief We use level order traversal and finding the maximum width from all levels.
  * 
  * Time complexity : O(n)
- * Auxillary space : O(h)
+ * Auxillary space : O(w)
  * 
  * @param root 
  * @return int 

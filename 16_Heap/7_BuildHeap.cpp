@@ -127,7 +127,7 @@ public:
     }
 
     /**
-     * @brief To convert the given array into a heap we call heapify function for all the nodes from the innermost right node which is the parent of the last left on the right.
+     * @brief To convert the given array into a heap we call heapify function for all the nodes from the parent of the last leaf node on the right.
      *
      * To find the innermost right node we do floor(((size-1)-1)/2) which is the parent of the last node.
      *

@@ -17,7 +17,7 @@ public:
     }
 };
 /**
- * @brief For the preorder traversal of a tree we are making recursive call for left child and then making a recursive call for the right child and then we are printing the root.
+ * @brief For the postorder traversal of a tree we are making recursive call for left child and then making a recursive call for the right child and then we are printing the root.
  *
  * Time complexity : O(n) (Since every node takes constant amount of time)
  * Auxillary space : O(height) (At max the number of nodes in recursive call stack will be equal to the height of the tree )

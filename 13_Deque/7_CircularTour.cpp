@@ -5,7 +5,7 @@ using namespace std;
 /**
  * @brief
  *
- * PROBLEM : In this problem we are given the amount of petrol present at each station and we the distance from the next petrol station assuming all of them are in a circle. We need to find the petrol station from where we can successful go around the whole circle else return -1.
+ * PROBLEM : In this problem we are given the amount of petrol present at each station and the distance from the next petrol station assuming all of them are in a circle. We need to find the petrol station from where we can successful go around the whole circle else return -1.
  *
  * Naive solution : We will apply the brute force approach and for each petrol pump check whether we can go arround the whole circle.
  *
